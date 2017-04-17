@@ -6,31 +6,31 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://example.com/</loc>
+  <loc>https://jakeshi.github.io/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/2017/</loc>
+  <loc>https://jakeshi.github.io/2017/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/archive.html</loc>
+  <loc>https://jakeshi.github.io/archive.html</loc>
+  <lastmod>2017-04-17T03:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/categories/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/</loc>
+  <loc>https://jakeshi.github.io/galleries/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/galleries/</loc>
+  <loc>https://jakeshi.github.io/listings/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/posts/blog-with-python-and-github/</loc>
+  <loc>https://jakeshi.github.io/posts/blog-with-python-and-github/</loc>
   <lastmod>2017-04-17T01:52:00Z</lastmod>
  </url>
 </urlset>
