@@ -6,4 +6,5 @@
 .. link: 
 .. description: 
 .. type: text
+
 I created this blog using Nikola.
