@@ -17,7 +17,7 @@ Step 3: Copy code from below and paste to your Notebook
    :number-lines:
 
 	# Load libraries
-import pandas
+	import pandas
 	from pandas.tools.plotting import scatter_matrix
 	import matplotlib.pyplot as plt
 	from sklearn import model_selection

@@ -100,28 +100,36 @@
 <p>Step 2: Launch IPython</p>
 <p>Step 3: Copy code from below and paste to your Notebook</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_cd01c3b54d76428f819fb1f83ed31a0a-1">1</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_cd01c3b54d76428f819fb1f83ed31a0a-1"></a>     <span class="c1"># Load libraries</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-1"> 1</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-2"> 2</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-3"> 3</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-4"> 4</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-5"> 5</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-6"> 6</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-7"> 7</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-8"> 8</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-9"> 9</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-10">10</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-11">11</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-12">12</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-13">13</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-14">14</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_56729f35a3e24b38beba6d271e85000d-1"></a>     <span class="c1"># Load libraries</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<a name="rest_code_56729f35a3e24b38beba6d271e85000d-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 </pre></td>
 </tr></table>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 11)</p>
-Explicit markup ends without a blank line; unexpected unindent.</div>
-<dl class="docutils">
-<dt>import pandas</dt>
-<dd>from pandas.tools.plotting import scatter_matrix
-import matplotlib.pyplot as plt
-from sklearn import model_selection
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC</dd>
-</dl>
 </div>
     </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-python-and-github/" class="u-url">Blog with Python and Github</a></h1>

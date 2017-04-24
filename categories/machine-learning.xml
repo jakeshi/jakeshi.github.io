@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay (Posts about machine learning)</title><link>https://jakeshi.github.io/</link><description></description><atom:link href="https://jakeshi.github.io/categories/machine-learning.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Apr 2017 00:49:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Your First Step by Step Machine Learning Project</title><link>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</link><dc:creator>Jake Shi</dc:creator><description>&lt;div&gt;&lt;p&gt;Step1: Download and install Anaconda&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay (Posts about machine learning)</title><link>https://jakeshi.github.io/</link><description></description><atom:link href="https://jakeshi.github.io/categories/machine-learning.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Apr 2017 00:58:36 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Your First Step by Step Machine Learning Project</title><link>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</link><dc:creator>Jake Shi</dc:creator><description>&lt;div&gt;&lt;p&gt;Step1: Download and install Anaconda&lt;/p&gt;
 &lt;p&gt;Step 2: Launch IPython&lt;/p&gt;
 &lt;p&gt;Step 3: Copy code from below and paste to your Notebook&lt;/p&gt;
-&lt;table class="codetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_cd01c3b54d76428f819fb1f83ed31a0a-1"&gt;1&lt;/a&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_cd01c3b54d76428f819fb1f83ed31a0a-1"&gt;&lt;/a&gt;     &lt;span class="c1"&gt;# Load libraries&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 11)&lt;/p&gt;
-Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;import pandas&lt;/dt&gt;
-&lt;dd&gt;from pandas.tools.plotting import scatter_matrix
-import matplotlib.pyplot as plt
-from sklearn import model_selection
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC&lt;/dd&gt;
-&lt;/dl&gt;&lt;/div&gt;</description><category>machine learning</category><guid>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</guid><pubDate>Mon, 24 Apr 2017 00:12:25 GMT</pubDate></item></channel></rss>
+&lt;table class="codetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-1"&gt; 1&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-2"&gt; 2&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-3"&gt; 3&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-4"&gt; 4&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-5"&gt; 5&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-6"&gt; 6&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-7"&gt; 7&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-8"&gt; 8&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-9"&gt; 9&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-10"&gt;10&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-11"&gt;11&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-12"&gt;12&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-13"&gt;13&lt;/a&gt;
+&lt;a href="https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/#rest_code_56729f35a3e24b38beba6d271e85000d-14"&gt;14&lt;/a&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-1"&gt;&lt;/a&gt;     &lt;span class="c1"&gt;# Load libraries&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-2"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-3"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pandas.tools.plotting&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;scatter_matrix&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-4"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-5"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;model_selection&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-6"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.metrics&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;classification_report&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-7"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.metrics&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;confusion_matrix&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-8"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.metrics&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;accuracy_score&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-9"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.linear_model&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LogisticRegression&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-10"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.tree&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;DecisionTreeClassifier&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-11"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.neighbors&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;KNeighborsClassifier&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-12"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.discriminant_analysis&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LinearDiscriminantAnalysis&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-13"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.naive_bayes&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;GaussianNB&lt;/span&gt;
+&lt;a name="rest_code_56729f35a3e24b38beba6d271e85000d-14"&gt;&lt;/a&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.svm&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;SVC&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</description><category>machine learning</category><guid>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</guid><pubDate>Mon, 24 Apr 2017 00:12:25 GMT</pubDate></item></channel></rss>
