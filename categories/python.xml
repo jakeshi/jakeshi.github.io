@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay (Posts about python)</title><link>https://jakeshi.github.io/</link><description></description><atom:link href="https://jakeshi.github.io/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Tue, 18 Apr 2017 02:30:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog with Python and Github</title><link>https://jakeshi.github.io/posts/blog-with-python-and-github/</link><dc:creator>Jake Shi</dc:creator><description>&lt;p&gt;I created this blog using Nikola.&lt;/p&gt;</description><category>github</category><category>python</category><guid>https://jakeshi.github.io/posts/blog-with-python-and-github/</guid><pubDate>Mon, 17 Apr 2017 01:52:16 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay (Posts about python)</title><link>https://jakeshi.github.io/</link><description></description><atom:link href="https://jakeshi.github.io/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Apr 2017 00:20:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog with Python and Github</title><link>https://jakeshi.github.io/posts/blog-with-python-and-github/</link><dc:creator>Jake Shi</dc:creator><description>&lt;div&gt;&lt;p&gt;I created this blog using Nikola.
+Step1: Download and install Anaconda
+Step 2: Launch IPython
+Step 3: Copy code from below and paste to your Notebook&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;# Load libraries
+import pandas
+from pandas.tools.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC&lt;/dd&gt;
+&lt;/dl&gt;&lt;/div&gt;</description><category>github</category><category>python</category><guid>https://jakeshi.github.io/posts/blog-with-python-and-github/</guid><pubDate>Mon, 17 Apr 2017 01:52:16 GMT</pubDate></item></channel></rss>
