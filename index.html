@@ -68,38 +68,35 @@
             <p class="dateline"><a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark"><time class="published dt-published" datetime="2017-04-23T20:12:25-04:00" title="2017-04-23 20:12">2017-04-23 20:12</time></a></p>
         </div>
     </header><div class="e-content entry-content">
-    <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-1"> 1</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-2"> 2</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-3"> 3</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-4"> 4</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-5"> 5</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-6"> 6</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-7"> 7</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-8"> 8</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-9"> 9</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-10">10</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-11">11</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-12">12</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-13">13</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_60a16acea2f44aa994b09f1b29596c07-14">14</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_60a16acea2f44aa994b09f1b29596c07-1"></a><span class="c1"># Load libraries</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<a name="rest_code_60a16acea2f44aa994b09f1b29596c07-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
-</pre></td>
-</tr></table>
+    <div>
+<p>Step1: Download and install Anaconda</p>
+<p>Step 2: Launch IPython</p>
+<p>Step 3: Copy code from below and paste to your Notebook</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 7)</p>
+<p>Content block expected for the "code-block" directive; none found.</p>
+<pre class="literal-block">
+.. code-block:: python
+   :number-lines:
+
+</pre>
 </div>
+<p># Load libraries
+import pandas
+from pandas.tools.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC</p>
+</div>
+    </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-python-and-github/" class="u-url">Blog with Python and Github</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
