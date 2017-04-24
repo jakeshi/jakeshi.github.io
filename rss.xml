@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay</title><link>https://jakeshi.github.io/</link><description>Share my learning</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Apr 2017 00:27:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Your First Step by Step Machine Learning Project</title><link>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</link><dc:creator>Jake Shi</dc:creator><description>&lt;div&gt;&lt;p&gt;Step1: Download and install Anaconda&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeplay</title><link>https://jakeshi.github.io/</link><description>Share my learning</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake Shi&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Apr 2017 00:28:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Your First Step by Step Machine Learning Project</title><link>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</link><dc:creator>Jake Shi</dc:creator><description>&lt;div&gt;&lt;p&gt;Step1: Download and install Anaconda&lt;/p&gt;
 &lt;p&gt;Step 2: Launch IPython&lt;/p&gt;
 &lt;p&gt;Step 3: Copy code from below and paste to your Notebook&lt;/p&gt;
 &lt;div class="system-message"&gt;
@@ -8,9 +8,11 @@
 &lt;pre class="literal-block"&gt;
 .. code-block:: python
    :number-lines:
-
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 9)&lt;/p&gt;
+Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;p&gt;# Load libraries
 import pandas
 from pandas.tools.plotting import scatter_matrix
