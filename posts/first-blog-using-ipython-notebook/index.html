@@ -16,7 +16,19 @@
 <meta property="og:site_name" content="Codeplay">
 <meta property="og:title" content="First Blog Using IPython Notebook">
 <meta property="og:url" content="https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/">
-<meta property="og:description" content="Write your post here.">
+<meta property="og:description" content="Write your post here.
+
+
+
+
+
+
+In [7]:
+
+    
+# Load dataset
+url = &quot;https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data&quot;
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-04-23T20:42:41-04:00">
 </head>
@@ -97,6 +109,22 @@
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load dataset</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'sepal-length'</span><span class="p">,</span> <span class="s1">'sepal-width'</span><span class="p">,</span> <span class="s1">'petal-length'</span><span class="p">,</span> <span class="s1">'petal-width'</span><span class="p">,</span> <span class="s1">'class'</span><span class="p">]</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
