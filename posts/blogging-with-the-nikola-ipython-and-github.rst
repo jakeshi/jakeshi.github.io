@@ -60,3 +60,4 @@ Run nikola github_deploy. This will build the site, commit the output folder to 
 
 If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.
 
+git pull origin branchname --allow-unrelated-histories
