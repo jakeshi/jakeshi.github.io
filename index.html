@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# fb: http://ogp.me/ns/fb# " lang="en">
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="data analytics">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jake's data</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://jakeshi.github.io/">
-<meta property="fb:app_id" content="">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/blogging-with-the-nikola-ipython-and-github/" type="text/html">
 </head>
 <body>
@@ -70,13 +71,7 @@
                 Jake
             </span></p>
             <p class="dateline"><a href="posts/blogging-with-the-nikola-ipython-and-github/" rel="bookmark"><time class="published dt-published" datetime="2017-08-06T16:25:45-04:00" title="2017-08-06 16:25">2017-08-06 16:25</time></a></p>
-                <p class="commentline">
-        
-<span class="fb-comments-count" data-url="/posts/blogging-with-the-nikola-ipython-and-github/">
-
-
-        </span></p>
-</div>
+        </div>
     </header><div class="e-content entry-content">
     <div>
 <p><a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html">https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html</a></p>
@@ -115,6 +110,138 @@ output
 If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch and commit to it. Otherwise, this is done for you.</p>
 <p>Run nikola github_deploy. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.</p>
 <p>If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.</p>
+<p>git pull origin branchname --allow-unrelated-histories</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/first-blog-using-ipython-notebook/" class="u-url">First Blog Using IPython Notebook</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jake
+            </span></p>
+            <p class="dateline"><a href="posts/first-blog-using-ipython-notebook/" rel="bookmark"><time class="published dt-published" datetime="2017-04-23T20:42:41-04:00" title="2017-04-23 20:42">2017-04-23 20:42</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>
+<p>Download and install Anaconda (this gives you ipython and a nice enviroment)</p>
+</li>
+<li>
+<p>Install Nikola</p>
+</li>
+<li>
+<p>Follow the tutorial</p>
+</li>
+</ol>
+<p>Helpful Links:</p>
+<p><a href="http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html">http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># http://nbviewer.jupyter.org/gist/theandygross/4544012</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Python: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python: 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/your-first-step-by-step-machine-learning-project/" class="u-url">Your First Step by Step Machine Learning Project</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jake
+            </span></p>
+            <p class="dateline"><a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark"><time class="published dt-published" datetime="2017-04-23T20:12:25-04:00" title="2017-04-23 20:12">2017-04-23 20:12</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Step1: Download and install Anaconda</p>
+<p>Step 2: Launch IPython</p>
+<p>Step 3: Copy code from below and paste to your Notebook</p>
+<table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-1"> 1</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-2"> 2</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-3"> 3</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-4"> 4</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-5"> 5</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-6"> 6</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-7"> 7</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-8"> 8</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-9"> 9</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-10">10</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-11">11</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-12">12</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-13">13</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_bb0aa575b9994b64888fd02df076d440-14">14</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_bb0aa575b9994b64888fd02df076d440-1"></a>     <span class="c1"># Load libraries</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<a name="rest_code_bb0aa575b9994b64888fd02df076d440-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+</pre></td>
+</tr></table>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-python-and-github/" class="u-url">Blog with Python and Github</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jake
+            </span></p>
+            <p class="dateline"><a href="posts/blog-with-python-and-github/" rel="bookmark"><time class="published dt-published" datetime="2017-04-16T21:52:16-04:00" title="2017-04-16 21:52">2017-04-16 21:52</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>I created this blog using Nikola.</p>
+<p>Step1: Download and install Anaconda
+Step 2: Launch IPython
+Step 3: Copy code from below and paste to your Notebook</p>
 </div>
     </div>
     </article>
@@ -122,36 +249,12 @@ If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch 
 
 
 
+
+
         
-<div id="fb-root"></div>
-<script>
-    // thank lxml for this
-    $('.fb-comments-count').each(function(i, obj) {
-        var url = obj.attributes['data-url'].value;
-        // change here if you dislike the default way of displaying
-        // this
-        obj.innerHTML = '<fb:comments-count href="' + url + '"></fb:comments-count> comments';
-    });
-
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '',
-      status     : true,
-      xfbml      : true
-    });
-
-  };
-
-  // Load the SDK asynchronously
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+        </script>
 </div>
         <!--End of body content-->
 
@@ -166,6 +269,15 @@ If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch 
             <script src="assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates -->
+    </script><!-- end fancy dates --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55860186-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
