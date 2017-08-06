@@ -7,50 +7,30 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://jakeshi.github.io/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/2017/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/archive.html</loc>
-  <lastmod>2017-04-24T00:49:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/</loc>
-  <lastmod>2017-04-24T00:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/categories/github/</loc>
-  <lastmod>2017-04-18T01:59:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/categories/machine-learning/</loc>
-  <lastmod>2017-04-24T00:27:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/categories/python/</loc>
-  <lastmod>2017-04-18T01:59:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/galleries/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/listings/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
-  <loc>https://jakeshi.github.io/posts/blog-with-python-and-github/</loc>
-  <lastmod>2017-04-17T01:52:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</loc>
-  <lastmod>2017-04-24T00:49:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</loc>
-  <lastmod>2017-04-24T00:20:00Z</lastmod>
+  <loc>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</loc>
+  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
 </urlset>
