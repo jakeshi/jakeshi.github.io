@@ -18,7 +18,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jake"  # (translatable)
-BLOG_TITLE = "Jake's data"  # (translatable)
+BLOG_TITLE = "Jake's notebook"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://jakeshi.github.io/"
