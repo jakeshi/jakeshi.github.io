@@ -1,13 +1,13 @@
 .. title: Your First Step by Step Machine Learning Project
 .. slug: your-first-step-by-step-machine-learning-project
-.. date: 2017-04-23 20:12:25 UTC-04:00
+.. date: 2017-01-23 20:12:25 UTC-04:00
 .. tags: machine learning
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 
-Step1: Download and install Anaconda
+Step 1: Download and install Anaconda
 
 Step 2: Launch IPython
 
