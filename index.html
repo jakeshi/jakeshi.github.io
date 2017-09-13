@@ -12,7 +12,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://jakeshi.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/blogging-with-the-nikola-ipython-and-github/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/blog-with-python-and-github/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -65,59 +65,7 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blogging-with-the-nikola-ipython-and-github/" class="u-url">Blogging with the  Nikola, IPython and Github</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/blogging-with-the-nikola-ipython-and-github/" rel="bookmark"><time class="published dt-published" datetime="2017-08-06T16:25:45-04:00" title="2017-08-06 16:25">2017-08-06 16:25</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p><a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html">https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html</a></p>
-<p>Problem 1: conda, virtual env doesn't work for me.</p>
-<p><a class="reference external" href="https://conda.io/docs/using/envs.html#create-an-environment">https://conda.io/docs/using/envs.html#create-an-environment</a></p>
-<p>conda create -n blog python</p>
-<p>jakehku blog $ conda create -n blog
-Fetching package metadata ...........
-Solving package specifications:
-Package plan for installation in environment /anaconda/envs/blog:</p>
-<p>Proceed ([y]/n)? y</p>
-<p>#
-# To activate this environment, use:
-# &gt; source activate blog
-#
-# To deactivate an active environment, use:
-# &gt; source deactivate
-#.</p>
-<p>Deploying to GitHub</p>
-<p>Nikola provides a separate command github_deploy to deploy your site to GitHub Pages. The command builds the site, commits the output to a gh-pages branch and pushes the output to GitHub. Nikola uses the ghp-import command for this.</p>
-<p>In order to use this feature, you need to configure a few things first. Make sure you have nikola and git installed on your PATH.</p>
-<p>Initialize a Nikola site, if you haven’t already.</p>
-<p>Initialize a git repository in your Nikola source directory by running:</p>
-<p>git init .
-git remote add origin <a class="reference external" href="mailto:git@github.com">git@github.com</a>:user/repository.git
-Setup branches and remotes in conf.py:</p>
-<p>GITHUB_DEPLOY_BRANCH is the branch where Nikola-generated HTML files will be deployed. It should be gh-pages for project pages and master for user pages (user.github.io).
-GITHUB_SOURCE_BRANCH is the branch where your Nikola site source will be deployed. We recommend and default to src.
-GITHUB_REMOTE_NAME is the remote to which changes are pushed.
-GITHUB_COMMIT_SOURCE controls whether or not the source branch is automatically committed to and pushed.
-We recommend setting it to True, unless you are automating builds with
-Travis CI.
-Create a .gitignore file. We recommend adding at least the following entries:</p>
-<p>cache
-.doit.db
-__pycache__
-output
-If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch and commit to it. Otherwise, this is done for you.</p>
-<p>Run nikola</p>
-<p>github_deploy</p>
-<p>. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.</p>
-<p>If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.</p>
-<p>git pull origin src --allow-unrelated-histories</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-python-and-github/" class="u-url">Blog with Python and Github</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-python-and-github/" class="u-url">Blog with Python and Github</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Jake
@@ -322,6 +270,58 @@ Step 3: Copy code from below and paste to your Notebook</p>
 <a name="rest_code_471bd80686d840f3b974b0688ae1d870-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 </pre></td>
 </tr></table>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blogging-with-the-nikola-ipython-and-github/" class="u-url">Blogging with the  Nikola, IPython and Github</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jake
+            </span></p>
+            <p class="dateline"><a href="posts/blogging-with-the-nikola-ipython-and-github/" rel="bookmark"><time class="published dt-published" datetime="2016-08-06T16:25:45-04:00" title="2016-08-06 16:25">2016-08-06 16:25</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html">https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html</a></p>
+<p>Problem 1: conda, virtual env doesn't work for me.</p>
+<p><a class="reference external" href="https://conda.io/docs/using/envs.html#create-an-environment">https://conda.io/docs/using/envs.html#create-an-environment</a></p>
+<p>conda create -n blog python</p>
+<p>jakehku blog $ conda create -n blog
+Fetching package metadata ...........
+Solving package specifications:
+Package plan for installation in environment /anaconda/envs/blog:</p>
+<p>Proceed ([y]/n)? y</p>
+<p>#
+# To activate this environment, use:
+# &gt; source activate blog
+#
+# To deactivate an active environment, use:
+# &gt; source deactivate
+#.</p>
+<p>Deploying to GitHub</p>
+<p>Nikola provides a separate command github_deploy to deploy your site to GitHub Pages. The command builds the site, commits the output to a gh-pages branch and pushes the output to GitHub. Nikola uses the ghp-import command for this.</p>
+<p>In order to use this feature, you need to configure a few things first. Make sure you have nikola and git installed on your PATH.</p>
+<p>Initialize a Nikola site, if you haven’t already.</p>
+<p>Initialize a git repository in your Nikola source directory by running:</p>
+<p>git init .
+git remote add origin <a class="reference external" href="mailto:git@github.com">git@github.com</a>:user/repository.git
+Setup branches and remotes in conf.py:</p>
+<p>GITHUB_DEPLOY_BRANCH is the branch where Nikola-generated HTML files will be deployed. It should be gh-pages for project pages and master for user pages (user.github.io).
+GITHUB_SOURCE_BRANCH is the branch where your Nikola site source will be deployed. We recommend and default to src.
+GITHUB_REMOTE_NAME is the remote to which changes are pushed.
+GITHUB_COMMIT_SOURCE controls whether or not the source branch is automatically committed to and pushed.
+We recommend setting it to True, unless you are automating builds with
+Travis CI.
+Create a .gitignore file. We recommend adding at least the following entries:</p>
+<p>cache
+.doit.db
+__pycache__
+output
+If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch and commit to it. Otherwise, this is done for you.</p>
+<p>Run nikola</p>
+<p>github_deploy</p>
+<p>. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.</p>
+<p>If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.</p>
+<p>git pull origin src --allow-unrelated-histories</p>
 </div>
     </div>
     </article>

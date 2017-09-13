@@ -7,7 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://jakeshi.github.io/</loc>
-  <lastmod>2017-08-06T20:27:00Z</lastmod>
+  <lastmod>2017-09-13T04:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/2016/</loc>
+  <lastmod>2017-09-13T04:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/2017/</loc>
@@ -15,7 +19,7 @@
  </url>
  <url>
   <loc>https://jakeshi.github.io/archive.html</loc>
-  <lastmod>2017-08-06T21:04:00Z</lastmod>
+  <lastmod>2017-09-13T04:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/</loc>
