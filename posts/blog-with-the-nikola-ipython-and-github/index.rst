@@ -1,7 +1,7 @@
-.. title: Blogging with the  Nikola, IPython and Github
-.. slug: blogging-with-the-nikola-ipython-and-github
+.. title: Blog with the  Nikola, IPython and Github
+.. slug: blog-with-the-nikola-ipython-and-github
 .. date: 2016-08-06 16:25:45 UTC-04:00
-.. tags: 
+.. tags: how-to
 .. category: 
 .. link: 
 .. description: 
