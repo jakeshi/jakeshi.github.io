@@ -12,7 +12,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://jakeshi.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/first-blog-using-ipython-notebook/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/your-first-step-by-step-machine-learning-project/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -65,12 +65,57 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/first-blog-using-ipython-notebook/" class="u-url">First Blog Using IPython Notebook</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/your-first-step-by-step-machine-learning-project/" class="u-url">Your First Step by Step Machine Learning Project</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Jake
             </span></p>
-            <p class="dateline"><a href="posts/first-blog-using-ipython-notebook/" rel="bookmark"><time class="published dt-published" datetime="2017-02-23T20:42:41-04:00" title="2017-02-23 20:42">2017-02-23 20:42</time></a></p>
+            <p class="dateline"><a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark"><time class="published dt-published" datetime="2017-01-23T20:12:25-04:00" title="2017-01-23 20:12">2017-01-23 20:12</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Step 1: Download and install Anaconda</p>
+<p>Step 2: Launch IPython</p>
+<p>Step 3: Copy code from below and paste to your Notebook</p>
+<table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-1"> 1</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-2"> 2</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-3"> 3</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-4"> 4</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-5"> 5</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-6"> 6</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-7"> 7</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-8"> 8</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-9"> 9</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-10">10</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-11">11</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-12">12</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-13">13</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-14">14</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_471bd80686d840f3b974b0688ae1d870-1"></a>     <span class="c1"># Load libraries</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<a name="rest_code_471bd80686d840f3b974b0688ae1d870-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+</pre></td>
+</tr></table>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/first-blog-using-ipython-notebook/" class="u-url">First Blog Using IPython Notebook</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jake
+            </span></p>
+            <p class="dateline"><a href="posts/first-blog-using-ipython-notebook/" rel="bookmark"><time class="published dt-published" datetime="2016-09-23T20:42:41-04:00" title="2016-09-23 20:42">2016-09-23 20:42</time></a></p>
         </div>
     </header><div class="e-content entry-content">
     <div tabindex="-1" id="notebook" class="border-box-sizing">
@@ -211,51 +256,6 @@
     </div>
   </div>
 
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/your-first-step-by-step-machine-learning-project/" class="u-url">Your First Step by Step Machine Learning Project</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark"><time class="published dt-published" datetime="2017-01-23T20:12:25-04:00" title="2017-01-23 20:12">2017-01-23 20:12</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>Step 1: Download and install Anaconda</p>
-<p>Step 2: Launch IPython</p>
-<p>Step 3: Copy code from below and paste to your Notebook</p>
-<table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-1"> 1</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-2"> 2</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-3"> 3</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-4"> 4</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-5"> 5</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-6"> 6</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-7"> 7</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-8"> 8</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-9"> 9</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-10">10</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-11">11</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-12">12</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-13">13</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-14">14</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_471bd80686d840f3b974b0688ae1d870-1"></a>     <span class="c1"># Load libraries</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
-</pre></td>
-</tr></table>
-</div>
     </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-the-nikola-ipython-and-github/" class="u-url">Blog with the  Nikola, IPython and Github</a></h1>
         <div class="metadata">

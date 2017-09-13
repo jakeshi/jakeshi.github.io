@@ -19,15 +19,11 @@
  </url>
  <url>
   <loc>https://jakeshi.github.io/archive.html</loc>
-  <lastmod>2017-09-13T04:08:00Z</lastmod>
+  <lastmod>2017-09-13T04:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/</loc>
   <lastmod>2017-09-13T04:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/categories/github/</loc>
-  <lastmod>2017-08-06T21:04:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/how-to/</loc>
@@ -38,20 +34,8 @@
   <lastmod>2017-08-06T21:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://jakeshi.github.io/categories/python/</loc>
-  <lastmod>2017-08-06T21:04:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/posts/blog-with-python-and-github/</loc>
-  <lastmod>2017-08-06T21:04:00Z</lastmod>
- </url>
- <url>
   <loc>https://jakeshi.github.io/posts/blog-with-the-nikola-ipython-and-github/</loc>
   <lastmod>2017-09-13T04:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</loc>
-  <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</loc>
