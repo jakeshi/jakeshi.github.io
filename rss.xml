@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jake's data</title><link>https://jakeshi.github.io/</link><description>data analytics</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake&lt;/a&gt; </copyright><lastBuildDate>Mon, 07 Aug 2017 12:38:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blogging with the  Nikola, IPython and Github</title><link>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</link><dc:creator>Jake</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html"&gt;https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jake's data</title><link>https://jakeshi.github.io/</link><description>data analytics</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake&lt;/a&gt; </copyright><lastBuildDate>Wed, 13 Sep 2017 03:56:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blogging with the  Nikola, IPython and Github</title><link>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</link><dc:creator>Jake</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html"&gt;https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1: conda, virtual env doesn't work for me.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://conda.io/docs/using/envs.html#create-an-environment"&gt;https://conda.io/docs/using/envs.html#create-an-environment&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;conda create -n blog python=x.x anaconda&lt;/p&gt;
+&lt;p&gt;conda create -n blog python&lt;/p&gt;
 &lt;p&gt;jakehku blog $ conda create -n blog
 Fetching package metadata ...........
 Solving package specifications:
@@ -15,8 +15,8 @@ Package plan for installation in environment /anaconda/envs/blog:&lt;/p&gt;
 # To deactivate an active environment, use:
 # &amp;gt; source deactivate
 #.&lt;/p&gt;
-&lt;p&gt;Deploying to GitHub
-Nikola provides a separate command github_deploy to deploy your site to GitHub Pages. The command builds the site, commits the output to a gh-pages branch and pushes the output to GitHub. Nikola uses the ghp-import command for this.&lt;/p&gt;
+&lt;p&gt;Deploying to GitHub&lt;/p&gt;
+&lt;p&gt;Nikola provides a separate command github_deploy to deploy your site to GitHub Pages. The command builds the site, commits the output to a gh-pages branch and pushes the output to GitHub. Nikola uses the ghp-import command for this.&lt;/p&gt;
 &lt;p&gt;In order to use this feature, you need to configure a few things first. Make sure you have nikola and git installed on your PATH.&lt;/p&gt;
 &lt;p&gt;Initialize a Nikola site, if you haven’t already.&lt;/p&gt;
 &lt;p&gt;Initialize a git repository in your Nikola source directory by running:&lt;/p&gt;
@@ -26,16 +26,20 @@ Setup branches and remotes in conf.py:&lt;/p&gt;
 &lt;p&gt;GITHUB_DEPLOY_BRANCH is the branch where Nikola-generated HTML files will be deployed. It should be gh-pages for project pages and master for user pages (user.github.io).
 GITHUB_SOURCE_BRANCH is the branch where your Nikola site source will be deployed. We recommend and default to src.
 GITHUB_REMOTE_NAME is the remote to which changes are pushed.
-GITHUB_COMMIT_SOURCE controls whether or not the source branch is automatically committed to and pushed. We recommend setting it to True, unless you are automating builds with Travis CI.
+GITHUB_COMMIT_SOURCE controls whether or not the source branch is automatically committed to and pushed.
+We recommend setting it to True, unless you are automating builds with
+Travis CI.
 Create a .gitignore file. We recommend adding at least the following entries:&lt;/p&gt;
 &lt;p&gt;cache
 .doit.db
 __pycache__
 output
 If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch and commit to it. Otherwise, this is done for you.&lt;/p&gt;
-&lt;p&gt;Run nikola github_deploy. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.&lt;/p&gt;
+&lt;p&gt;Run nikola&lt;/p&gt;
+&lt;p&gt;github_deploy&lt;/p&gt;
+&lt;p&gt;. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.&lt;/p&gt;
 &lt;p&gt;If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.&lt;/p&gt;
-&lt;p&gt;git pull origin branchname --allow-unrelated-histories&lt;/p&gt;&lt;/div&gt;</description><guid>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</guid><pubDate>Sun, 06 Aug 2017 20:25:45 GMT</pubDate></item><item><title>First Blog Using IPython Notebook</title><link>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</link><dc:creator>Jake</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+&lt;p&gt;git pull origin src --allow-unrelated-histories&lt;/p&gt;&lt;/div&gt;</description><guid>https://jakeshi.github.io/posts/blogging-with-the-nikola-ipython-and-github/</guid><pubDate>Sun, 06 Aug 2017 20:25:45 GMT</pubDate></item><item><title>First Blog Using IPython Notebook</title><link>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</link><dc:creator>Jake</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
@@ -158,7 +162,7 @@ If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch 
 &lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'hello, notebook blog :)'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
