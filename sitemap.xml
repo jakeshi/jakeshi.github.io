@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://jakeshi.github.io/</loc>
-  <lastmod>2017-09-13T04:05:00Z</lastmod>
+  <lastmod>2018-02-02T05:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/2016/</loc>
@@ -18,8 +18,12 @@
   <lastmod>2017-08-06T20:27:00Z</lastmod>
  </url>
  <url>
+  <loc>https://jakeshi.github.io/2018/</loc>
+  <lastmod>2018-02-02T05:14:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://jakeshi.github.io/archive.html</loc>
-  <lastmod>2017-09-13T04:11:00Z</lastmod>
+  <lastmod>2018-02-02T05:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/</loc>
@@ -40,6 +44,14 @@
  <url>
   <loc>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</loc>
   <lastmod>2017-08-06T21:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/posts/pca-in-python/</loc>
+  <lastmod>2018-02-02T05:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/posts/simple-exercise-analysing-stocks-using-ipython/</loc>
+  <lastmod>2018-02-02T05:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/posts/your-first-step-by-step-machine-learning-project/</loc>
