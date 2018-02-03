@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://jakeshi.github.io/</loc>
-  <lastmod>2018-02-02T05:14:00Z</lastmod>
+  <lastmod>2018-02-03T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/2016/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>https://jakeshi.github.io/categories/machine-learning/</loc>
   <lastmod>2017-08-06T21:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/pages/about/</loc>
+  <lastmod>2018-02-03T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/posts/blog-with-the-nikola-ipython-and-github/</loc>
