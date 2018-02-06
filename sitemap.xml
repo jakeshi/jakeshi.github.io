@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>https://jakeshi.github.io/archive.html</loc>
-  <lastmod>2018-02-03T21:12:00Z</lastmod>
+  <lastmod>2018-02-06T03:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/categories/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>https://jakeshi.github.io/posts/blog-with-the-nikola-ipython-and-github/</loc>
   <lastmod>2017-09-13T04:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://jakeshi.github.io/posts/exploratory-data-analysis-eda-tutorial/</loc>
+  <lastmod>2018-02-06T03:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://jakeshi.github.io/posts/first-blog-using-ipython-notebook/</loc>
