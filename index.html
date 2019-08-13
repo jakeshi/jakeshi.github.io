@@ -8,6 +8,7 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
@@ -17,68 +18,72 @@
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
-<!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
-<!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="https://jakeshi.github.io/">
-
-                <span id="blog-title">Jake's notebook</span>
-            </a>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
         </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="archive.html">Archive</a>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://jakeshi.github.io/">
+
+            <span id="blog-title">Jake's notebook</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav"></ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Archive</a>
                 </li>
-<li>
-<a href="categories/">Tags</a>
+<li class="nav-item">
+<a href="categories/" class="nav-link">Tags</a>
                 </li>
-<li>
-<a href="rss.xml">RSS feed</a>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">RSS feed</a>
                 </li>
-<li>
-<a href="pages/about">About</a>
+<li class="nav-item">
+<a href="pages/about" class="nav-link">About</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
 </div>
 <!-- /.navbar-collapse -->
-    </div>
-<!-- /.container -->
-</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
-            
+        
+        
+    
+        
 
     
-
-
-    
-<div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/exploratory-data-analysis-eda-tutorial/" class="u-url">Exploratory Data Analysis (EDA) Tutorial</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/exploratory-data-analysis-eda-tutorial/" rel="bookmark"><time class="published dt-published" datetime="2018-02-05T21:48:16-05:00" title="2018-02-05 21:48">2018-02-05 21:48</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/exploratory-data-analysis-eda-tutorial/" class="u-url">Exploratory Data Analysis (EDA) Tutorial</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/exploratory-data-analysis-eda-tutorial/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-02-05T21:48:16-05:00" itemprop="datePublished" title="2018-02-05 21:48">2018-02-05 21:48</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -98,7 +103,7 @@
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -108,7 +113,7 @@
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -134,7 +139,7 @@ root                  *  /anaconda
 <div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -166,7 +171,7 @@ root                  *  /anaconda
 <span class="n">df</span> <span class="o">=</span> <span class="n">panel_data</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="s1">'Adj Close'</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -186,7 +191,7 @@ root                  *  /anaconda
 <span class="nb">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -196,7 +201,7 @@ root                  *  /anaconda
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -230,7 +235,7 @@ Date
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -240,7 +245,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -325,7 +330,7 @@ Date
 <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'MAC == ROIC'</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -335,7 +340,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -380,7 +385,7 @@ Date
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -390,7 +395,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -422,7 +427,7 @@ Date
 <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -432,7 +437,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -963,7 +968,7 @@ Date
 <span class="n">df</span><span class="p">[</span><span class="s1">'MAC_bucket'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -973,7 +978,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -996,21 +1001,20 @@ Name: MAC_bucket, dtype: int64</pre>
 </div>
 
 </div>
-    </div>
-  </div>
-
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/simple-exercise-analysing-stocks-using-ipython/" class="u-url">Simple exercise analysing stocks using IPython</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/simple-exercise-analysing-stocks-using-ipython/" rel="bookmark"><time class="published dt-published" datetime="2018-02-02T00:00:32-05:00" title="2018-02-02 00:00">2018-02-02 00:00</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/simple-exercise-analysing-stocks-using-ipython/" class="u-url">Simple exercise analysing stocks using IPython</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/simple-exercise-analysing-stocks-using-ipython/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-02-02T00:00:32-05:00" itemprop="datePublished" title="2018-02-02 00:00">2018-02-02 00:00</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In [1]:</div>
@@ -1035,7 +1039,7 @@ Name: MAC_bucket, dtype: int64</pre>
 <span class="n">panel_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">DataReader</span><span class="p">(</span><span class="n">tickers</span><span class="p">,</span> <span class="n">data_source</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1059,7 +1063,7 @@ Name: MAC_bucket, dtype: int64</pre>
 <span class="n">close</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1069,7 +1073,7 @@ Name: MAC_bucket, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -1159,7 +1163,7 @@ Name: MAC_bucket, dtype: int64</pre>
 <span class="n">adj_close</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1169,7 +1173,7 @@ Name: MAC_bucket, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -1275,7 +1279,7 @@ Name: MAC_bucket, dtype: int64</pre>
 <span class="n">df</span><span class="p">[</span><span class="s1">'MAC_bucket'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1285,7 +1289,7 @@ Name: MAC_bucket, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -1307,21 +1311,20 @@ Name: MAC_bucket, dtype: int64</pre>
 </div>
 
 </div>
-    </div>
-  </div>
-
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/pca-in-python/" class="u-url">PCA in Python</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/pca-in-python/" rel="bookmark"><time class="published dt-published" datetime="2017-09-13T23:12:16-04:00" title="2017-09-13 23:12">2017-09-13 23:12</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/pca-in-python/" class="u-url">PCA in Python</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/pca-in-python/" rel="bookmark">
+            <time class="published dt-published" datetime="2017-09-13T23:12:16-04:00" itemprop="datePublished" title="2017-09-13 23:12">2017-09-13 23:12</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1354,7 +1357,7 @@ Name: MAC_bucket, dtype: int64</pre>
 <span class="nb">print</span><span class="p">(</span><span class="n">spy</span><span class="o">.</span><span class="n">head</span><span class="p">())</span> <span class="c1"># See first few rows</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1364,7 +1367,7 @@ Name: MAC_bucket, dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1402,7 +1405,7 @@ Date
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Stock Price ($)'</span><span class="p">);</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1412,7 +1415,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -1447,7 +1450,7 @@ Date
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Investment Value ($)'</span><span class="p">);</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1457,7 +1460,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -1503,7 +1506,7 @@ Date
 <span class="n">dca</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">spy</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">doDCA</span><span class="p">(</span><span class="n">initial_investment</span><span class="p">,</span> <span class="n">x</span><span class="p">)),</span> <span class="n">index</span><span class="o">=</span><span class="n">spy</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Dollar Cost Averaging (DCA)'</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1521,7 +1524,7 @@ Date
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Investment Value ($)'</span><span class="p">);</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1531,7 +1534,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 
@@ -1554,71 +1557,73 @@ Date
 <div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
-    </div>
-  </div>
-
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/your-first-step-by-step-machine-learning-project/" class="u-url">Your First Step by Step Machine Learning Project</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark"><time class="published dt-published" datetime="2017-01-23T20:12:25-04:00" title="2017-01-23 20:12">2017-01-23 20:12</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/your-first-step-by-step-machine-learning-project/" class="u-url">Your First Step by Step Machine Learning Project</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/your-first-step-by-step-machine-learning-project/" rel="bookmark">
+            <time class="published dt-published" datetime="2017-01-23T20:12:25-04:00" itemprop="datePublished" title="2017-01-23 20:12">2017-01-23 20:12</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <p>Step 1: Download and install Anaconda</p>
 <p>Step 2: Launch IPython</p>
 <p>Step 3: Copy code from below and paste to your Notebook</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-1"> 1</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-2"> 2</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-3"> 3</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-4"> 4</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-5"> 5</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-6"> 6</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-7"> 7</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-8"> 8</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-9"> 9</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-10">10</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-11">11</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-12">12</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-13">13</a>
-<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_471bd80686d840f3b974b0688ae1d870-14">14</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_471bd80686d840f3b974b0688ae1d870-1"></a>     <span class="c1"># Load libraries</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<a name="rest_code_471bd80686d840f3b974b0688ae1d870-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-1"> 1</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-2"> 2</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-3"> 3</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-4"> 4</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-5"> 5</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-6"> 6</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-7"> 7</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-8"> 8</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-9"> 9</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-10">10</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-11">11</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-12">12</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-13">13</a>
+<a href="posts/your-first-step-by-step-machine-learning-project/#rest_code_abf38e3a452043e899190108c911e4ba-14">14</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_abf38e3a452043e899190108c911e4ba-1"></a>     <span class="c1"># Load libraries</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-2"></a>     <span class="kn">import</span> <span class="nn">pandas</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-3"></a>     <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-4"></a>     <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-5"></a>     <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-6"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-7"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-8"></a>     <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-9"></a>     <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-10"></a>     <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-11"></a>     <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-12"></a>     <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-13"></a>     <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<a name="rest_code_abf38e3a452043e899190108c911e4ba-14"></a>     <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 </pre></td>
 </tr></table>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/first-blog-using-ipython-notebook/" class="u-url">First Blog Using IPython Notebook</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/first-blog-using-ipython-notebook/" rel="bookmark"><time class="published dt-published" datetime="2016-09-23T20:42:41-04:00" title="2016-09-23 20:42">2016-09-23 20:42</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/first-blog-using-ipython-notebook/" class="u-url">First Blog Using IPython Notebook</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/first-blog-using-ipython-notebook/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-09-23T20:42:41-04:00" itemprop="datePublished" title="2016-09-23 20:42">2016-09-23 20:42</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1652,7 +1657,7 @@ Date
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Python: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1662,7 +1667,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1684,7 +1689,7 @@ Date
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s1">'This is really exciting'</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1694,7 +1699,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1715,7 +1720,7 @@ Date
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1725,7 +1730,7 @@ Date
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1746,24 +1751,25 @@ Date
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s1">'hello, notebook blog :)'</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
-    </div>
-  </div>
-
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/blog-with-the-nikola-ipython-and-github/" class="u-url">Blog with the  Nikola, IPython and Github</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jake
-            </span></p>
-            <p class="dateline"><a href="posts/blog-with-the-nikola-ipython-and-github/" rel="bookmark"><time class="published dt-published" datetime="2016-08-06T16:25:45-04:00" title="2016-08-06 16:25">2016-08-06 16:25</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/blog-with-the-nikola-ipython-and-github/" class="u-url">Blog with the  Nikola, IPython and Github</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jake
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/blog-with-the-nikola-ipython-and-github/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-08-06T16:25:45-04:00" itemprop="datePublished" title="2016-08-06 16:25">2016-08-06 16:25</time></a>
+            </p>
+                </div>
+            </header><div class="e-content entry-content">
+                    <div>
 <p><a class="reference external" href="https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html">https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html</a></p>
 <p>Problem 1: conda, virtual env doesn't work for me.</p>
 <p><a class="reference external" href="https://conda.io/docs/using/envs.html#create-an-environment">https://conda.io/docs/using/envs.html#create-an-environment</a></p>
@@ -1806,33 +1812,32 @@ If you set GITHUB_COMMIT_SOURCE to False, you must switch to your source branch 
 <p>If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.</p>
 <p>git pull origin src --allow-unrelated-histories</p>
 </div>
-    </div>
-    </article>
+                </div>
+            </article>
 </div>
+    
 
+    
 
-
-
-
+    
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
-        </script>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer">
-            Contents © 2018         <a href="mailto:jakexshi@gmail.com">Jake</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        </script><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:jakexshi@gmail.com">Jake</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>
 </div>
 
 
-            <script src="assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

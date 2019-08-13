@@ -6,19 +6,23 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://jakeshi.github.io/categories/cat_posts.xml</loc>
+  <lastmod>2019-08-13T19:09:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://jakeshi.github.io/categories/how-to.xml</loc>
-  <lastmod>2017-09-13T04:08:00Z</lastmod>
+  <lastmod>2019-08-13T19:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://jakeshi.github.io/categories/machine-learning.xml</loc>
-  <lastmod>2017-09-13T03:59:00Z</lastmod>
+  <lastmod>2019-08-13T19:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://jakeshi.github.io/rss.xml</loc>
-  <lastmod>2018-02-06T03:29:00Z</lastmod>
+  <lastmod>2019-08-13T19:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://jakeshi.github.io/sitemap.xml</loc>
-  <lastmod>2018-02-06T03:29:00Z</lastmod>
+  <lastmod>2019-08-13T19:09:00Z</lastmod>
  </sitemap>
 </sitemapindex>
