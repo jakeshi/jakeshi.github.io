@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jake's notebook</title><link>https://jakeshi.github.io/</link><description>data analytics</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake&lt;/a&gt; </copyright><lastBuildDate>Tue, 13 Aug 2019 19:30:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Focus</title><link>https://jakeshi.github.io/posts/focus/</link><dc:creator>Jake</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jake's notebook</title><link>https://jakeshi.github.io/</link><description>data analytics</description><atom:link href="https://jakeshi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:jakexshi@gmail.com"&gt;Jake&lt;/a&gt; </copyright><lastBuildDate>Tue, 13 Aug 2019 19:42:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Focus</title><link>https://jakeshi.github.io/posts/focus/</link><dc:creator>Jake</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;There are too many distractions. So it is very important to focus.&lt;/p&gt;
@@ -9,14 +9,14 @@
 &lt;/div&gt;</description><guid>https://jakeshi.github.io/posts/focus/</guid><pubDate>Tue, 13 Aug 2019 19:21:55 GMT</pubDate></item><item><title>Exploratory Data Analysis (EDA) Tutorial</title><link>https://jakeshi.github.io/posts/exploratory-data-analysis-eda-tutorial/</link><dc:creator>Jake</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Write your post here.&lt;/p&gt;
+&lt;h2 id="Summary"&gt;Summary&lt;a class="anchor-link" href="https://jakeshi.github.io/posts/exploratory-data-analysis-eda-tutorial/#Summary"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This post download data from Yahoo finance and does some basic EDA.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;conda env list
@@ -39,9 +39,8 @@
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
 &lt;pre&gt;# conda environments:
 #
-blog                     /anaconda/envs/blog
-pyfolio                  /anaconda/envs/pyfolio
-root                  *  /anaconda
+base                  *  /Users/xianshi/anaconda3
+blog                     /Users/xianshi/anaconda3/envs/blog
 
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -53,28 +52,14 @@ root                  *  /anaconda
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Importing The Data&lt;/span&gt;
 
+
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pandas_datareader&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
-
-
 
 &lt;span class="c1"&gt;# Define the instruments to download. We would like to see Apple, Microsoft and the S&amp;amp;P500 index.&lt;/span&gt;
 &lt;span class="c1"&gt;# tickers = ['W', 'HD', 'AMZN','LOW','LL']&lt;/span&gt;
@@ -88,7 +73,6 @@ root                  *  /anaconda
 
 &lt;span class="c1"&gt;# User pandas_reader.data.DataReader to load the desired data. As simple as that.&lt;/span&gt;
 &lt;span class="n"&gt;panel_data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataReader&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tickers&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data_source&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start_date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end_date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;panel_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ix&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Adj Close'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -98,14 +82,382 @@ root                  *  /anaconda
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [12]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;panel_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Attributes&lt;/th&gt;
+      &lt;th colspan="5" halign="left"&gt;High&lt;/th&gt;
+      &lt;th colspan="5" halign="left"&gt;Low&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th colspan="5" halign="left"&gt;Volume&lt;/th&gt;
+      &lt;th colspan="5" halign="left"&gt;Adj Close&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Symbols&lt;/th&gt;
+      &lt;th&gt;MAC&lt;/th&gt;
+      &lt;th&gt;ROIC&lt;/th&gt;
+      &lt;th&gt;SKT&lt;/th&gt;
+      &lt;th&gt;SPG&lt;/th&gt;
+      &lt;th&gt;TCO&lt;/th&gt;
+      &lt;th&gt;MAC&lt;/th&gt;
+      &lt;th&gt;ROIC&lt;/th&gt;
+      &lt;th&gt;SKT&lt;/th&gt;
+      &lt;th&gt;SPG&lt;/th&gt;
+      &lt;th&gt;TCO&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;MAC&lt;/th&gt;
+      &lt;th&gt;ROIC&lt;/th&gt;
+      &lt;th&gt;SKT&lt;/th&gt;
+      &lt;th&gt;SPG&lt;/th&gt;
+      &lt;th&gt;TCO&lt;/th&gt;
+      &lt;th&gt;MAC&lt;/th&gt;
+      &lt;th&gt;ROIC&lt;/th&gt;
+      &lt;th&gt;SKT&lt;/th&gt;
+      &lt;th&gt;SPG&lt;/th&gt;
+      &lt;th&gt;TCO&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Date&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2016-12-01&lt;/th&gt;
+      &lt;td&gt;68.279999&lt;/td&gt;
+      &lt;td&gt;20.629999&lt;/td&gt;
+      &lt;td&gt;34.669998&lt;/td&gt;
+      &lt;td&gt;179.380005&lt;/td&gt;
+      &lt;td&gt;72.290001&lt;/td&gt;
+      &lt;td&gt;66.809998&lt;/td&gt;
+      &lt;td&gt;20.190001&lt;/td&gt;
+      &lt;td&gt;34.090000&lt;/td&gt;
+      &lt;td&gt;175.869995&lt;/td&gt;
+      &lt;td&gt;71.010002&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;927500.0&lt;/td&gt;
+      &lt;td&gt;1041700.0&lt;/td&gt;
+      &lt;td&gt;745100.0&lt;/td&gt;
+      &lt;td&gt;2075900.0&lt;/td&gt;
+      &lt;td&gt;355000.0&lt;/td&gt;
+      &lt;td&gt;58.302998&lt;/td&gt;
+      &lt;td&gt;18.167982&lt;/td&gt;
+      &lt;td&gt;29.123262&lt;/td&gt;
+      &lt;td&gt;157.796829&lt;/td&gt;
+      &lt;td&gt;63.129143&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2016-12-02&lt;/th&gt;
+      &lt;td&gt;68.690002&lt;/td&gt;
+      &lt;td&gt;20.799999&lt;/td&gt;
+      &lt;td&gt;34.990002&lt;/td&gt;
+      &lt;td&gt;180.789993&lt;/td&gt;
+      &lt;td&gt;72.790001&lt;/td&gt;
+      &lt;td&gt;67.540001&lt;/td&gt;
+      &lt;td&gt;20.370001&lt;/td&gt;
+      &lt;td&gt;34.380001&lt;/td&gt;
+      &lt;td&gt;177.419998&lt;/td&gt;
+      &lt;td&gt;71.459999&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;676100.0&lt;/td&gt;
+      &lt;td&gt;601200.0&lt;/td&gt;
+      &lt;td&gt;418800.0&lt;/td&gt;
+      &lt;td&gt;1273900.0&lt;/td&gt;
+      &lt;td&gt;250200.0&lt;/td&gt;
+      &lt;td&gt;58.925732&lt;/td&gt;
+      &lt;td&gt;18.436207&lt;/td&gt;
+      &lt;td&gt;29.420441&lt;/td&gt;
+      &lt;td&gt;160.063568&lt;/td&gt;
+      &lt;td&gt;63.632339&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2016-12-05&lt;/th&gt;
+      &lt;td&gt;68.839996&lt;/td&gt;
+      &lt;td&gt;20.770000&lt;/td&gt;
+      &lt;td&gt;34.990002&lt;/td&gt;
+      &lt;td&gt;180.809998&lt;/td&gt;
+      &lt;td&gt;72.709999&lt;/td&gt;
+      &lt;td&gt;67.680000&lt;/td&gt;
+      &lt;td&gt;20.549999&lt;/td&gt;
+      &lt;td&gt;34.330002&lt;/td&gt;
+      &lt;td&gt;178.029999&lt;/td&gt;
+      &lt;td&gt;71.739998&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;931000.0&lt;/td&gt;
+      &lt;td&gt;648500.0&lt;/td&gt;
+      &lt;td&gt;478000.0&lt;/td&gt;
+      &lt;td&gt;1027300.0&lt;/td&gt;
+      &lt;td&gt;245000.0&lt;/td&gt;
+      &lt;td&gt;59.505215&lt;/td&gt;
+      &lt;td&gt;18.534555&lt;/td&gt;
+      &lt;td&gt;29.692146&lt;/td&gt;
+      &lt;td&gt;161.312943&lt;/td&gt;
+      &lt;td&gt;64.100204&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2016-12-06&lt;/th&gt;
+      &lt;td&gt;69.610001&lt;/td&gt;
+      &lt;td&gt;21.020000&lt;/td&gt;
+      &lt;td&gt;35.310001&lt;/td&gt;
+      &lt;td&gt;182.139999&lt;/td&gt;
+      &lt;td&gt;73.550003&lt;/td&gt;
+      &lt;td&gt;68.099998&lt;/td&gt;
+      &lt;td&gt;20.590000&lt;/td&gt;
+      &lt;td&gt;34.830002&lt;/td&gt;
+      &lt;td&gt;179.130005&lt;/td&gt;
+      &lt;td&gt;72.209999&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;915600.0&lt;/td&gt;
+      &lt;td&gt;590800.0&lt;/td&gt;
+      &lt;td&gt;391100.0&lt;/td&gt;
+      &lt;td&gt;1202000.0&lt;/td&gt;
+      &lt;td&gt;269000.0&lt;/td&gt;
+      &lt;td&gt;59.721443&lt;/td&gt;
+      &lt;td&gt;18.597143&lt;/td&gt;
+      &lt;td&gt;29.946865&lt;/td&gt;
+      &lt;td&gt;160.732864&lt;/td&gt;
+      &lt;td&gt;64.877075&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2016-12-07&lt;/th&gt;
+      &lt;td&gt;70.830002&lt;/td&gt;
+      &lt;td&gt;21.350000&lt;/td&gt;
+      &lt;td&gt;35.950001&lt;/td&gt;
+      &lt;td&gt;183.759995&lt;/td&gt;
+      &lt;td&gt;75.320000&lt;/td&gt;
+      &lt;td&gt;69.169998&lt;/td&gt;
+      &lt;td&gt;20.860001&lt;/td&gt;
+      &lt;td&gt;35.310001&lt;/td&gt;
+      &lt;td&gt;180.509995&lt;/td&gt;
+      &lt;td&gt;73.660004&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;810800.0&lt;/td&gt;
+      &lt;td&gt;843500.0&lt;/td&gt;
+      &lt;td&gt;628000.0&lt;/td&gt;
+      &lt;td&gt;1278400.0&lt;/td&gt;
+      &lt;td&gt;406700.0&lt;/td&gt;
+      &lt;td&gt;61.165833&lt;/td&gt;
+      &lt;td&gt;18.954781&lt;/td&gt;
+      &lt;td&gt;30.481783&lt;/td&gt;
+      &lt;td&gt;163.981232&lt;/td&gt;
+      &lt;td&gt;65.768707&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;5 rows × 30 columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;panel_data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Adj Close'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Basic Description of the Data&lt;/span&gt;
 
 &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
+
+
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;Symbols&lt;/th&gt;
+      &lt;th&gt;MAC&lt;/th&gt;
+      &lt;th&gt;ROIC&lt;/th&gt;
+      &lt;th&gt;SKT&lt;/th&gt;
+      &lt;th&gt;SPG&lt;/th&gt;
+      &lt;th&gt;TCO&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;count&lt;/th&gt;
+      &lt;td&gt;272.000000&lt;/td&gt;
+      &lt;td&gt;272.000000&lt;/td&gt;
+      &lt;td&gt;272.000000&lt;/td&gt;
+      &lt;td&gt;272.000000&lt;/td&gt;
+      &lt;td&gt;272.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;mean&lt;/th&gt;
+      &lt;td&gt;55.118781&lt;/td&gt;
+      &lt;td&gt;18.442282&lt;/td&gt;
+      &lt;td&gt;24.788283&lt;/td&gt;
+      &lt;td&gt;151.898158&lt;/td&gt;
+      &lt;td&gt;55.258763&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;std&lt;/th&gt;
+      &lt;td&gt;4.208408&lt;/td&gt;
+      &lt;td&gt;0.656658&lt;/td&gt;
+      &lt;td&gt;3.412448&lt;/td&gt;
+      &lt;td&gt;7.387024&lt;/td&gt;
+      &lt;td&gt;6.499111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;min&lt;/th&gt;
+      &lt;td&gt;47.703194&lt;/td&gt;
+      &lt;td&gt;16.672773&lt;/td&gt;
+      &lt;td&gt;19.759792&lt;/td&gt;
+      &lt;td&gt;138.740128&lt;/td&gt;
+      &lt;td&gt;42.535595&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25%&lt;/th&gt;
+      &lt;td&gt;51.428945&lt;/td&gt;
+      &lt;td&gt;17.981809&lt;/td&gt;
+      &lt;td&gt;21.999384&lt;/td&gt;
+      &lt;td&gt;146.275017&lt;/td&gt;
+      &lt;td&gt;50.471438&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;50%&lt;/th&gt;
+      &lt;td&gt;55.492500&lt;/td&gt;
+      &lt;td&gt;18.473031&lt;/td&gt;
+      &lt;td&gt;23.172514&lt;/td&gt;
+      &lt;td&gt;150.871696&lt;/td&gt;
+      &lt;td&gt;54.953302&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;75%&lt;/th&gt;
+      &lt;td&gt;59.109798&lt;/td&gt;
+      &lt;td&gt;18.914228&lt;/td&gt;
+      &lt;td&gt;28.274007&lt;/td&gt;
+      &lt;td&gt;157.328503&lt;/td&gt;
+      &lt;td&gt;60.127033&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;max&lt;/th&gt;
+      &lt;td&gt;62.869678&lt;/td&gt;
+      &lt;td&gt;20.064341&lt;/td&gt;
+      &lt;td&gt;31.560102&lt;/td&gt;
+      &lt;td&gt;167.898178&lt;/td&gt;
+      &lt;td&gt;67.782234&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;last&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;last&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -125,20 +477,20 @@ root                  *  /anaconda
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;                  MAC       ROIC        SKT         SPG        TCO
+&lt;pre&gt;Symbols           MAC       ROIC        SKT         SPG        TCO
 Date                                                              
-2017-12-29  65.680000  19.950001  26.152012  171.740005  65.430000
-2017-12-28  66.010002  20.010000  26.142147  171.149994  65.650002
-2017-12-27  65.879997  19.780001  25.954712  170.770004  65.709999
-2017-12-26  65.730003  19.650000  25.540382  169.360001  65.529999
-2017-12-22  65.199997  19.320000  25.066866  167.070007  64.379997
-                  MAC       ROIC        SKT         SPG        TCO
+2016-12-01  58.302998  18.167982  29.123262  157.796829  63.129143
+2016-12-02  58.925732  18.436207  29.420441  160.063568  63.632339
+2016-12-05  59.505215  18.534555  29.692146  161.312943  64.100204
+2016-12-06  59.721443  18.597143  29.946865  160.732864  64.877075
+2016-12-07  61.165833  18.954781  30.481783  163.981232  65.768707
+Symbols           MAC       ROIC        SKT         SPG        TCO
 Date                                                              
-2016-12-07  67.464951  20.244057  33.766525  175.889618  70.885620
-2016-12-06  65.871819  19.862093  33.173965  172.405350  69.924606
-2016-12-05  65.633331  19.795248  32.891792  173.027527  69.087311
-2016-12-02  64.994164  19.690208  32.590813  171.687424  68.583031
-2016-12-01  64.307297  19.403738  32.261608  169.256088  68.040680
+2017-12-22  59.747002  18.089575  22.627144  155.758743  59.732700
+2017-12-26  60.232689  18.398554  23.054577  157.893692  60.799690
+2017-12-27  60.370136  18.520279  23.428577  159.208237  60.966686
+2017-12-28  60.489265  18.735632  23.597769  159.562500  60.911030
+2017-12-29  60.186863  18.679453  23.606674  160.112564  60.706913
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -149,7 +501,7 @@ Date
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [27]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -165,71 +517,92 @@ Date
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[27]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
 
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
 &lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
     &lt;tr style="text-align: right;"&gt;
-      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Symbols&lt;/th&gt;
       &lt;th&gt;MAC&lt;/th&gt;
       &lt;th&gt;ROIC&lt;/th&gt;
       &lt;th&gt;SKT&lt;/th&gt;
       &lt;th&gt;SPG&lt;/th&gt;
       &lt;th&gt;TCO&lt;/th&gt;
     &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Date&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;th&gt;2017-08-15&lt;/th&gt;
-      &lt;td&gt;54.219425&lt;/td&gt;
-      &lt;td&gt;19.667877&lt;/td&gt;
-      &lt;td&gt;23.887403&lt;/td&gt;
-      &lt;td&gt;155.674820&lt;/td&gt;
-      &lt;td&gt;52.448853&lt;/td&gt;
+      &lt;th&gt;2017-03-28&lt;/th&gt;
+      &lt;td&gt;56.465996&lt;/td&gt;
+      &lt;td&gt;18.949013&lt;/td&gt;
+      &lt;td&gt;27.943995&lt;/td&gt;
+      &lt;td&gt;151.426422&lt;/td&gt;
+      &lt;td&gt;57.989056&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2017-10-16&lt;/th&gt;
-      &lt;td&gt;56.845974&lt;/td&gt;
-      &lt;td&gt;19.034889&lt;/td&gt;
-      &lt;td&gt;24.217821&lt;/td&gt;
-      &lt;td&gt;163.424454&lt;/td&gt;
-      &lt;td&gt;49.627392&lt;/td&gt;
+      &lt;th&gt;2017-03-10&lt;/th&gt;
+      &lt;td&gt;56.103745&lt;/td&gt;
+      &lt;td&gt;18.396067&lt;/td&gt;
+      &lt;td&gt;26.769661&lt;/td&gt;
+      &lt;td&gt;151.534576&lt;/td&gt;
+      &lt;td&gt;58.936821&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2016-12-01&lt;/th&gt;
-      &lt;td&gt;64.307297&lt;/td&gt;
-      &lt;td&gt;19.403738&lt;/td&gt;
-      &lt;td&gt;32.261608&lt;/td&gt;
-      &lt;td&gt;169.256088&lt;/td&gt;
-      &lt;td&gt;68.040680&lt;/td&gt;
+      &lt;th&gt;2017-04-04&lt;/th&gt;
+      &lt;td&gt;56.819401&lt;/td&gt;
+      &lt;td&gt;19.276661&lt;/td&gt;
+      &lt;td&gt;28.149717&lt;/td&gt;
+      &lt;td&gt;153.688156&lt;/td&gt;
+      &lt;td&gt;59.192852&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2017-07-18&lt;/th&gt;
-      &lt;td&gt;57.007412&lt;/td&gt;
-      &lt;td&gt;19.667877&lt;/td&gt;
-      &lt;td&gt;25.669998&lt;/td&gt;
-      &lt;td&gt;156.214249&lt;/td&gt;
-      &lt;td&gt;58.896122&lt;/td&gt;
+      &lt;th&gt;2017-05-05&lt;/th&gt;
+      &lt;td&gt;55.062401&lt;/td&gt;
+      &lt;td&gt;19.003618&lt;/td&gt;
+      &lt;td&gt;24.801085&lt;/td&gt;
+      &lt;td&gt;148.245621&lt;/td&gt;
+      &lt;td&gt;54.970566&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2017-10-03&lt;/th&gt;
-      &lt;td&gt;54.565022&lt;/td&gt;
-      &lt;td&gt;18.817009&lt;/td&gt;
-      &lt;td&gt;24.072048&lt;/td&gt;
-      &lt;td&gt;157.206940&lt;/td&gt;
-      &lt;td&gt;49.300636&lt;/td&gt;
+      &lt;th&gt;2017-07-13&lt;/th&gt;
+      &lt;td&gt;51.444580&lt;/td&gt;
+      &lt;td&gt;17.836662&lt;/td&gt;
+      &lt;td&gt;22.929958&lt;/td&gt;
+      &lt;td&gt;144.016022&lt;/td&gt;
+      &lt;td&gt;54.236202&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2017-12-27&lt;/th&gt;
-      &lt;td&gt;65.879997&lt;/td&gt;
-      &lt;td&gt;19.780001&lt;/td&gt;
-      &lt;td&gt;25.954712&lt;/td&gt;
-      &lt;td&gt;170.770004&lt;/td&gt;
-      &lt;td&gt;65.709999&lt;/td&gt;
+      &lt;th&gt;2017-03-24&lt;/th&gt;
+      &lt;td&gt;56.430656&lt;/td&gt;
+      &lt;td&gt;19.222054&lt;/td&gt;
+      &lt;td&gt;27.866848&lt;/td&gt;
+      &lt;td&gt;151.336319&lt;/td&gt;
+      &lt;td&gt;58.420258&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -244,7 +617,7 @@ Date
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [16]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# A Closer Look At Your Data: Queries&lt;/span&gt;
@@ -262,16 +635,29 @@ Date
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[16]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[8]:&lt;/div&gt;
 
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
 &lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
     &lt;tr style="text-align: right;"&gt;
-      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Symbols&lt;/th&gt;
       &lt;th&gt;MAC&lt;/th&gt;
       &lt;th&gt;ROIC&lt;/th&gt;
       &lt;th&gt;SKT&lt;/th&gt;
@@ -301,7 +687,7 @@ Date
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [33]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#cleaning&lt;/span&gt;
@@ -322,7 +708,7 @@ Date
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;Index([], dtype='object')
+&lt;pre&gt;Index([], dtype='object', name='Symbols')
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -333,7 +719,7 @@ Date
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [19]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Getting all weekdays between 01/01/2000 and 12/31/2016&lt;/span&gt;
@@ -347,7 +733,7 @@ Date
 &lt;span class="c1"&gt;# in the original set. To cope with this, we can fill the missing by replacing them&lt;/span&gt;
 &lt;span class="c1"&gt;# with the latest available price for each instrument.&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fillna&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;method&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'ffill'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -360,16 +746,29 @@ Date
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[19]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
 
 
 
 &lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
 &lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
 &lt;table border="1" class="dataframe"&gt;
   &lt;thead&gt;
     &lt;tr style="text-align: right;"&gt;
-      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Symbols&lt;/th&gt;
       &lt;th&gt;MAC&lt;/th&gt;
       &lt;th&gt;ROIC&lt;/th&gt;
       &lt;th&gt;SKT&lt;/th&gt;
@@ -418,457 +817,8 @@ Date
       &lt;td&gt;False&lt;/td&gt;
       &lt;td&gt;False&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-08&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-09&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-12&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-13&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-14&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-15&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-16&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-19&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-20&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-21&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-22&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-23&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-26&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-27&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-28&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-29&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2016-12-30&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-02&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-03&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-04&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-05&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-06&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-09&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-10&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-01-11&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;...&lt;/th&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-20&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-21&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-22&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-23&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-24&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-27&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-28&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-29&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-11-30&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-01&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-04&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-05&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-06&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-07&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-08&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-11&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-12&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-13&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-14&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-15&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-18&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-19&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-20&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-21&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-22&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-25&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-26&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-27&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-28&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;2017-12-29&lt;/th&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-      &lt;td&gt;False&lt;/td&gt;
-    &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;282 rows × 5 columns&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -880,7 +830,7 @@ Date
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [36]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Define your own bins&lt;/span&gt;
@@ -903,20 +853,19 @@ Date
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[36]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[11]:&lt;/div&gt;
 
 
 
 
 &lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;(64, 66]    65
-(56, 58]    57
-(54, 56]    35
-(66, 68]    29
-(52, 54]    29
-(60, 62]    25
-(62, 64]    24
-(58, 60]    13
+&lt;pre&gt;(51, 53]    62
+(59, 61]    61
+(57, 59]    46
+(49, 51]    35
+(55, 57]    26
+(53, 55]    21
+(47, 49]    17
 Name: MAC_bucket, dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 
