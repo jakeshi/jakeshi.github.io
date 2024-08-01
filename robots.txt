@@ -1,0 +1,4 @@
+Sitemap: https://jakeshi.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: jakeshi.github.io
