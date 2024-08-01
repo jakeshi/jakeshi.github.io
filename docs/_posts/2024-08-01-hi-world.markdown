@@ -17,5 +17,5 @@ print_hi('world')
 
 Check out the [our website] for more info in the future.
 
-[out website]: https://jacaai.com
+[our website]: https://jacaai.com
 
