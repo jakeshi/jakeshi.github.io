@@ -15,7 +15,7 @@ print_hi('world')
 #=> prints 'Hi, world' to STDOUT.
 {% endhighlight %}
 
-Check out the [our website]for more info in the future.
+Check out the [our website] for more info in the future.
 
 [out website]: https://jacaai.com
 
