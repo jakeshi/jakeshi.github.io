@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Hi World!"
+date:   2024-08-01 00:56:17 -0700
+categories: general update
+author: caca
+---
+We are excited to share more with you soon:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('world')
+#=> prints 'Hi, world' to STDOUT.
+{% endhighlight %}
+
+Check out the [our website] for more info in the future.
+
+[our website]: https://jacaai.com
+
