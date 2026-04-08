@@ -8,20 +8,24 @@ author: Jake
 
 Today was a full reset and cleanup day for my site.
 
-I started by cleaning up git branches and confirming what was active vs old history.
-Then I merged obsolete branch history safely, without overwriting the current `gh-pages` content.
+I used AI as a pair engineer for the whole process.
 
-After that, I migrated older posts from legacy branches into the current Jekyll blog, cleaned broken legacy navigation bits, and converted imported HTML posts into cleaner Markdown.
+I started by asking AI to inspect my git branches and separate active history from obsolete history.
+Then we merged old branch history safely, without overwriting the current `gh-pages` content.
 
-I also set up a newer local Ruby runtime so the site could render properly on my machine.
-That helped me actually preview and iterate on the real `gh-pages` source locally.
+After that, AI helped migrate older posts from legacy branches into the current Jekyll blog, clean broken legacy navigation bits, and convert imported HTML posts into cleaner Markdown.
 
-Then I redesigned the homepage and overall style to feel closer to the editorial style I wanted:
+I also used AI to troubleshoot local runtime issues and set up a newer Ruby environment so Jekyll could render properly on my machine.
+That made it possible to preview and iterate on the real `gh-pages` source locally, instead of guessing.
+
+Then AI helped me redesign the homepage and overall style to get closer to the editorial look I wanted:
 
 - simpler navigation
 - stronger typography
 - cleaner post stream
 - less visual noise
+
+I iterated quickly by giving AI direct feedback like “closer,” then applying another pass.
 
 Finally, I updated site identity details:
 
@@ -29,4 +33,4 @@ Finally, I updated site identity details:
 - homepage intro copy
 - contact email link to **jakexshi@gmail.com**
 
-Big takeaway from today: progress compounds fast when you clean structure first, then design.
+Big takeaway from today: AI works best when I drive intent and taste, and let it handle the repetitive heavy lifting.
