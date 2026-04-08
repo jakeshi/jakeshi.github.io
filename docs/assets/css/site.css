@@ -66,6 +66,22 @@ body {
   color: var(--ink);
 }
 
+.theme-toggle {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.86rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
 .hero {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--line);
@@ -221,6 +237,26 @@ body {
   .prose a {
     color: var(--accent);
   }
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #0a0a0a;
+  --ink-soft: #1a1f25;
+  --muted: #666a70;
+  --line: #e8eaed;
+  --accent: #0b66c3;
+  --surface-code: #f3f0ea;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0d10;
+  --ink: #f4f6f8;
+  --ink-soft: #d9dfe6;
+  --muted: #a7b0ba;
+  --line: #262b31;
+  --accent: #7fb5ff;
+  --surface-code: #14181d;
 }
 
 @media (max-width: 760px) {
