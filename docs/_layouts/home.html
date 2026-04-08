@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="hero">
-  <h1 class="hero-title">Hi, I am @jakexshi.</h1>
+  <h1 class="hero-title">Hi, I am <a href="{{ site.social.twitter }}" target="_blank" rel="noreferrer">@jakexshi</a>.</h1>
   <p class="hero-subtitle">{{ site.description }}</p>
   <p class="hero-links">
     {% if site.social.github %}<a href="{{ site.social.github }}" target="_blank" rel="noreferrer">GitHub</a>{% endif %}
@@ -11,12 +11,23 @@ layout: default
   </p>
 </section>
 
-<section class="post-stream" aria-label="Recent posts">
-  {% for post in site.posts %}
-    <article class="post-card">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p class="meta">Published: {{ post.date | date: "%-d %b, %Y" }}</p>
-      <p>{{ post.excerpt | strip_html | truncate: 220 }}</p>
-    </article>
+<section class="post-stream" aria-label="Posts">
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year_group in posts_by_year %}
+    <h3 class="year-heading">{{ year_group.name }}</h3>
+    {% for post in year_group.items %}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <span class="meta">{{ post.date | date: "%-d %b" }}</span>
+          {% assign words = post.content | number_of_words %}
+          {% assign mins = words | divided_by: 200 %}
+          {% if mins == 0 %}{% assign mins = 1 %}{% endif %}
+          <span class="meta">{{ mins }} min read</span>
+          {% if post.categories.first %}<span class="tag">{{ post.categories.first }}</span>{% endif %}
+        </div>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      </article>
+    {% endfor %}
   {% endfor %}
 </section>
