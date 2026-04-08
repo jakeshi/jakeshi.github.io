@@ -1,0 +1,6 @@
+---
+layout: post
+title: "Focus"
+date: 2019-08-13
+---
+There are too many distractions. So it is very important to focus.
