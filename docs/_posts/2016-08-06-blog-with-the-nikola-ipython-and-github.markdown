@@ -2,6 +2,7 @@
 layout: post
 title: "Setting Up a Blog with Nikola, IPython, and GitHub"
 date: 2016-08-06
+categories: tutorials
 ---
 
 I finally got a blog running. It took longer than I expected.

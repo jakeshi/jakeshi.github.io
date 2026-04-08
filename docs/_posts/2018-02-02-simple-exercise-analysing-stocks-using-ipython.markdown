@@ -2,6 +2,7 @@
 layout: post
 title: "Analysing REIT Stocks with Python"
 date: 2018-02-02
+categories: data-analysis
 ---
 
 I've been looking at real estate investment trusts (REITs) lately and wanted to do some basic analysis on a few tickers. The goal: pull stock data from Yahoo Finance, look at adjusted closing prices, and start getting comfortable with pandas DataFrames.

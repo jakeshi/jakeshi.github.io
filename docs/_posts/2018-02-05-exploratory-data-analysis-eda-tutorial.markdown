@@ -2,6 +2,7 @@
 layout: post
 title: "Exploratory Data Analysis with Python and Yahoo Finance"
 date: 2018-02-05
+categories: data-analysis
 ---
 
 Following up on my REIT analysis post, I wanted to go deeper into exploratory data analysis (EDA). Same dataset — ROIC, SKT, TCO, SPG, and MAC — but this time I'm walking through the full EDA workflow: descriptive stats, data quality checks, and visualization prep.

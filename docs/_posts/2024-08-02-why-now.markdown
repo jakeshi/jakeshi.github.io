@@ -2,12 +2,15 @@
 layout: post
 title: "Why Now"
 date: 2024-08-02
+categories: personal
 ---
 
-People keep asking me why I'm getting back into writing and building after years of mostly staying quiet. The honest answer: becoming a parent changes how you think about time.
+I'm getting back into writing and building after years of mostly staying quiet. There are two honest answers.
 
-Before my kid, I could afford to wait. "I'll build that someday." "I'll write about it eventually." Now I feel the days compressing. Not in a stressful way — in a clarifying way. If I have an idea, I should try it. If I learned something, I should write it down. Not for an audience, but because the act of putting it out there makes me take it more seriously.
+The first is that I got laid off from Google at the beginning of this year. After the initial shock wore off, something unexpected happened: I got time to think. Real, unstructured time — the kind you don't get when you're heads-down in a big company. I started revisiting old ideas, picking up side projects, and asking myself what I actually want to build. Getting laid off is disorienting, but it's also clarifying. When the default path disappears, you have to decide what matters to you.
 
-The other reason is AI. We're in the middle of something genuinely new. LLMs are changing how people interact with information, and I want to be building in this space, not just watching from the sidelines. I have ideas — some half-baked, some I think could actually help people — and this blog is where I'll work through them.
+The second reason is AI. We're in the middle of something genuinely new. LLMs are changing how people interact with information, and I want to be building in this space, not just watching from the sidelines. I have ideas — some half-baked, some I think could actually help people — and this blog is where I'll work through them.
 
-So: why now? Because I have less time than ever, and that's exactly why I can't afford to keep waiting.
+Being a new father adds urgency to all of this. Before my kid, I could afford to wait. "I'll build that someday." "I'll write about it eventually." Now I feel the days compressing. Not in a stressful way — in a clarifying way. If I have an idea, I should try it. If I learned something, I should write it down.
+
+So: why now? Because I have more time than I've had in years, more motivation than ever, and a window that won't stay open forever.

@@ -2,6 +2,7 @@
 layout: post
 title: "Lump Sum vs. Dollar Cost Averaging: An Apple Stock Analysis"
 date: 2017-09-13
+categories: data-analysis
 ---
 
 I've been curious about a classic investing question: is it better to invest a lump sum all at once, or spread it out over time (dollar cost averaging)? Instead of reading more opinions about it, I decided to just look at the data using Python.

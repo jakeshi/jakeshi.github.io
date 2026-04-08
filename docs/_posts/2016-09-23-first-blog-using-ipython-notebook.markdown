@@ -2,6 +2,7 @@
 layout: post
 title: "My First Blog Post Using an IPython Notebook"
 date: 2016-09-23
+categories: tutorials
 ---
 
 This is it — my first post written entirely as an IPython notebook and published through Nikola. The workflow is:

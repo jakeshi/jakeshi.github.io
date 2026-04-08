@@ -2,6 +2,7 @@
 layout: post
 title: "Your First Step-by-Step Machine Learning Project"
 date: 2017-01-23
+categories: machine-learning
 ---
 
 I've been learning machine learning for a few months now, and the hardest part isn't the math — it's knowing where to start. Most tutorials assume you already know what you're doing. This post is for people like me who just want a simple, working example they can run and modify.

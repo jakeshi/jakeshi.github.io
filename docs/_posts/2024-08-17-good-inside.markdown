@@ -2,6 +2,7 @@
 layout: post
 title: "Good Inside: What If a Parenting Book Could Talk Back?"
 date: 2024-08-17
+categories: ai parenting
 ---
 
 I recently became a father, and like most new parents, I found myself desperately searching for guidance. A friend recommended *Good Inside* by Dr. Becky Kennedy, and it quickly became one of those books that shifts how you see your kid — and yourself.

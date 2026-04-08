@@ -2,6 +2,7 @@
 layout: post
 title: "Hi World!"
 date: 2024-08-01
+categories: personal
 ---
 
 I'm starting a blog. Again.

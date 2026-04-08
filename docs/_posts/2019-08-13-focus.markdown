@@ -2,6 +2,7 @@
 layout: post
 title: "Focus"
 date: 2019-08-13
+categories: personal
 ---
 
 There are too many distractions. Social media, news cycles, Slack notifications, the endless scroll of content that feels productive but isn't.
