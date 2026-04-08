@@ -8,7 +8,7 @@ date: 2017-09-13
 Reference:
 <http://tetration.xyz/lumpsum_vs_dca/>
 
-```
+```python
 import pandas as pd
 import pandas_datareader.data as web
 import datetime
@@ -23,7 +23,7 @@ spy = web.DataReader("AAPL", "yahoo", start, end)
 print(spy.head()) # See first few rows
 ```
 
-```
+```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
@@ -38,7 +38,7 @@ plt.xlabel('')
 plt.ylabel('Stock Price ($)');
 ```
 
-```
+```python
 value_price = spy['Adj Close'][-1] # The final value of our stock
 initial_investment = 10000 # Our initial investment of $10k
 
@@ -54,7 +54,7 @@ plt.xlabel('')
 plt.ylabel('Investment Value ($)');
 ```
 
-```
+```python
 def doDCA(investment, start_date):
     # Get 12 investment dates in 7 day increments starting from start date
     investment_dates_all = pd.date_range(start_date,periods=12,freq='7D')
@@ -81,15 +81,12 @@ def doDCA(investment, start_date):
 dca = pd.Series(spy.index.map(lambda x: doDCA(initial_investment, x)), index=spy.index, name='Dollar Cost Averaging (DCA)')
 ```
 
-```
+```python
 dca.plot(figsize=(20,10))
 ax = plt.subplot()
 ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x))) # Y axis dollarsymbols
 plt.title('Dollar Cost Averaging - Value today of $10,000 invested on date')
 plt.xlabel('')
 plt.ylabel('Investment Value ($)');
-```
-
-```
 
 ```

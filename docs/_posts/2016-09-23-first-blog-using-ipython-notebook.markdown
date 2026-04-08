@@ -13,20 +13,11 @@ Helpful Links:
 
 <https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html>
 
-```
+```python
 # http://nbviewer.jupyter.org/gist/theandygross/4544012
 import sys
 print('Python: {}'.format(sys.version))
-```
-
-```
 print ('This is really exciting')
-```
-
-```
 print (12)
-```
-
-```
 print ('hello, notebook blog :)')
 ```

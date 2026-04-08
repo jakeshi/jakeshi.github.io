@@ -3,7 +3,7 @@ layout: post
 title: "Simple Exercise Analysing Stocks Using IPython"
 date: 2018-02-02
 ---
-```
+```python
 from pandas_datareader import data
 import pandas as pd
 %matplotlib inline
@@ -22,7 +22,7 @@ end_date = '2017-12-31'
 panel_data = data.DataReader(tickers, data_source, start_date, end_date)
 ```
 
-```
+```python
 # Getting just the adjusted closing prices. This will return a Pandas DataFrame
 # The index in this DataFrame is the major index of the panel_data.
 close = panel_data.ix['Close']
@@ -37,7 +37,7 @@ close = close.reindex(all_weekdays)
 close.head()
 ```
 
-```
+```python
 # Getting just the adjusted closing prices. This will return a Pandas DataFrame
 # The index in this DataFrame is the major index of the panel_data.
 adj_close = panel_data.ix['Adj Close']
@@ -56,7 +56,7 @@ adj_close = adj_close.fillna(method='ffill')
 adj_close.describe()
 ```
 
-```
+```python
 # Define your own bins
 mybins = range(df.MAC.min(), df.MAC.max(), 10)
 

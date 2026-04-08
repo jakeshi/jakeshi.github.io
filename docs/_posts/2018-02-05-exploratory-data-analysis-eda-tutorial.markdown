@@ -7,12 +7,12 @@ date: 2018-02-05
 
 This post download data from Yahoo finance and does some basic EDA.
 
-```
+```bash
 !conda env list
 %matplotlib inline
 ```
 
-```
+```python
 #Importing The Data
 
 from pandas_datareader import data
@@ -30,45 +30,36 @@ end_date = '2017-12-31'
 
 # User pandas_reader.data.DataReader to load the desired data. As simple as that.
 panel_data = data.DataReader(tickers, data_source, start_date, end_date)
-```
-
-```
 panel_data.head()
-```
-
-```
 df = panel_data['Adj Close']
 ```
 
-```
+```python
 # Basic Description of the Data
 
 df.describe()
 ```
 
-```
+```python
 first = df.head()
 last = df.tail()
 print(first)
 print(last)
-```
-
-```
 df.sample(6)
 ```
 
-```
+```python
 # A Closer Look At Your Data: Queries
 
 df.query('MAC == ROIC')
 ```
 
-```
+```python
 #cleaning
 print(df.columns[df.isnull().any()])
 ```
 
-```
+```python
 # Getting all weekdays between 01/01/2000 and 12/31/2016
 all_weekdays = pd.date_range(start=start_date, end=end_date, freq='B')
 
@@ -83,7 +74,7 @@ df = df.fillna(method='ffill')
 df.isnull().head()
 ```
 
-```
+```python
 # Define your own bins
 mybins = range(int(df.MAC.min()), int(df.MAC.max()), 2)
 

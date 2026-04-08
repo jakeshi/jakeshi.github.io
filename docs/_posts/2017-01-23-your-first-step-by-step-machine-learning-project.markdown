@@ -9,7 +9,7 @@ Step 2: Launch IPython
 
 Step 3: Copy code from below and paste to your Notebook
 
-```
+```python
      # Load libraries
      import pandas
      from pandas.tools.plotting import scatter_matrix
