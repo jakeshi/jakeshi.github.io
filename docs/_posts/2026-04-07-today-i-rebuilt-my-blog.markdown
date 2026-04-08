@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "today I rebuilt my blog"
-date:   2026-04-07 21:30:00 -0700
+date:   2026-04-07 00:00:00 -0700
 categories: general update
 author: Jake
 ---
