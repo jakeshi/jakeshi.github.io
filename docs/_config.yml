@@ -26,10 +26,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "jacaai.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jakeshi1
 github_username:  jakeshi
+footer_note: Steal this blog style and make it yours.
+social:
+  github: "https://github.com/jakeshi"
+  twitter: "https://x.com/jakeshi1"
 
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
