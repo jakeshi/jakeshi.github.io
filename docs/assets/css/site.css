@@ -1,9 +1,15 @@
 :root {
   --bg: #ffffff;
   --ink: #0a0a0a;
+  --ink-soft: #1a1f25;
   --muted: #666a70;
   --line: #e8eaed;
   --accent: #0b66c3;
+  --surface-code: #f3f0ea;
+  --fs-body: 1.02rem;
+  --fs-meta: 0.9rem;
+  --fs-title: clamp(1.5rem, 3.2vw, 2rem);
+  --fs-display: clamp(2.4rem, 6vw, 4.2rem);
 }
 
 * {
@@ -19,6 +25,7 @@ body {
 body {
   min-height: 100vh;
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: var(--fs-body);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.6;
@@ -67,8 +74,8 @@ body {
 .hero-title {
   margin: 0;
   font-family: "Newsreader", serif;
-  font-size: clamp(2rem, 7vw, 4.6rem);
-  line-height: 0.98;
+  font-size: var(--fs-display);
+  line-height: 1.02;
   letter-spacing: -0.02em;
 }
 
@@ -76,7 +83,7 @@ body {
   margin: 1rem 0 0;
   max-width: 65ch;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .hero-links {
@@ -117,7 +124,7 @@ body {
 }
 
 .post-card h2 {
-  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-size: var(--fs-title);
 }
 
 .post-card h2 a {
@@ -133,7 +140,7 @@ body {
 .meta {
   margin: 0.2rem 0 0.55rem;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: var(--fs-meta);
 }
 
 .post-body,
@@ -160,7 +167,7 @@ body {
 .prose p,
 .prose li,
 .post-card p {
-  color: #1a1f25;
+  color: var(--ink-soft);
 }
 
 .prose a {
@@ -179,7 +186,7 @@ body {
   padding: 1rem;
   border-radius: 10px;
   border: 1px solid var(--line);
-  background: #f3f0ea;
+  background: var(--surface-code);
   font-size: 0.9rem;
 }
 
@@ -194,6 +201,28 @@ body {
   color: var(--muted);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d10;
+    --ink: #f4f6f8;
+    --ink-soft: #d9dfe6;
+    --muted: #a7b0ba;
+    --line: #262b31;
+    --accent: #7fb5ff;
+    --surface-code: #14181d;
+  }
+
+  .post-card h2 a:hover,
+  .hero-links a:hover,
+  .top-nav a:hover {
+    color: var(--ink);
+  }
+
+  .prose a {
+    color: var(--accent);
+  }
+}
+
 @media (max-width: 760px) {
   .site-header {
     align-items: flex-start;
@@ -206,6 +235,6 @@ body {
   }
 
   .post-card {
-    padding: 1.1rem;
+    padding: 1.1rem 0;
   }
 }
