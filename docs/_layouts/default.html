@@ -26,13 +26,6 @@
       <nav class="top-nav" aria-label="Primary">
         <a href="{{ '/' | relative_url }}">Posts</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-        {% if site.social.github %}
-          <a href="{{ site.social.github }}" target="_blank" rel="noreferrer">GitHub</a>
-        {% endif %}
-        {% if site.social.twitter %}
-          <a href="{{ site.social.twitter }}" target="_blank" rel="noreferrer">X</a>
-        {% endif %}
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">Night</button>
       </nav>
     </header>
@@ -42,7 +35,7 @@
     </main>
 
     <footer class="site-shell site-footer">
-      <p><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a> · {{ site.footer_note }}</p>
+      <p>{{ site.footer_note }}</p>
     </footer>
     <script>
       (function () {
