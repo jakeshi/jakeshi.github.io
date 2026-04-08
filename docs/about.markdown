@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
+<div class="about-photo">
+  <img src="/assets/images/jake.jpg" alt="Jake Shi" />
+</div>
+
 I'm Jake. I build things and write about what I learn.
 
 I've spent the last decade at the intersection of product, data, and money — figuring out how systems grow, how pricing actually works at scale, and increasingly, how AI is reshaping all of it. I've shipped products at Google and LinkedIn, built analytics infrastructure that influenced nine-figure decisions at Venmo, and spent enough time in the weeds of experimentation and causal inference to have strong opinions about when A/B testing is the wrong tool.

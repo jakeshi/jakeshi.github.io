@@ -242,6 +242,18 @@ body {
   font-size: 0.9rem;
 }
 
+.about-photo {
+  margin: 0 0 1.8rem;
+}
+
+.about-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1rem 0 2rem;
