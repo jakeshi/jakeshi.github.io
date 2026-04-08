@@ -1,21 +1,13 @@
 ---
 layout: post
-title:  "Hi World!"
-date:   2024-08-01 00:56:17 -0700
-categories: general update
-author: caca
+title: "Hi World!"
+date: 2024-08-01
 ---
-We are excited to share more with you soon:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('world')
-#=> prints 'Hi, world' to STDOUT.
-{% endhighlight %}
+I'm starting a blog. Again.
 
-Check out the [our website] for more info in the future.
+I've had a GitHub Pages site since 2016, mostly a dumping ground for IPython notebooks and data science experiments. It served its purpose — I learned a lot — but I never treated it like a real blog.
 
-[our website]: https://jacaai.com
+Things are different now. I'm a father, I'm working on new ideas, and the world of AI is moving so fast that I want a place to think out loud. Not polished essays. Just honest notes on what I'm building, learning, and figuring out.
 
+If you're reading this, welcome. More soon.

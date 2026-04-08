@@ -1,65 +1,32 @@
 ---
 layout: post
-title: "Blog with the Nikola, IPython and Github"
+title: "Setting Up a Blog with Nikola, IPython, and GitHub"
 date: 2016-08-06
 ---
-<https://shankarmsy.github.io/posts/blogging-with-the-awesome-nikola-ipython-and-github.html>
 
-Problem 1: conda, virtual env doesn't work for me.
+I finally got a blog running. It took longer than I expected.
 
-<https://conda.io/docs/using/envs.html#create-an-environment>
+The setup: [Nikola](https://getnikola.com/) as the static site generator, IPython notebooks for writing posts with live code, and GitHub Pages for hosting. The idea is simple — write data science posts as notebooks, and Nikola converts them into a static site. In practice, there are a few rough edges.
 
+## What I ran into
+
+First, setting up the conda environment. Virtual environments didn't work for me out of the box. I ended up creating a clean one:
+
+```bash
 conda create -n blog python
+source activate blog
+```
 
-jakehku blog $ conda create -n blog
-Fetching package metadata ...........
-Solving package specifications:
-Package plan for installation in environment /anaconda/envs/blog:
+Then installing Nikola and its IPython plugin inside that environment.
 
-Proceed ([y]/n)? y
+## Deploying to GitHub Pages
 
-#
-# To activate this environment, use:
-# > source activate blog
-#
-# To deactivate an active environment, use:
-# > source deactivate
-#.
+Nikola has a built-in `github_deploy` command that builds your site, commits the output to a `gh-pages` branch, and pushes it. You need to configure a few things in `conf.py`:
 
-Deploying to GitHub
+- `GITHUB_DEPLOY_BRANCH` — `gh-pages` for project pages, `master` for user pages
+- `GITHUB_SOURCE_BRANCH` — defaults to `src`, where your source files live
+- `GITHUB_COMMIT_SOURCE` — set to `True` so the source branch is automatically committed
 
-Nikola provides a separate command github\_deploy to deploy your site to GitHub Pages. The command builds the site, commits the output to a gh-pages branch and pushes the output to GitHub. Nikola uses the ghp-import command for this.
+Once that's wired up, deploying is one command. It's a nice workflow — write a notebook, run the deploy, and the post is live.
 
-In order to use this feature, you need to configure a few things first. Make sure you have nikola and git installed on your PATH.
-
-Initialize a Nikola site, if you haven’t already.
-
-Initialize a git repository in your Nikola source directory by running:
-
-git init .
-git remote add origin [git@github.com](mailto:git@github.com):user/repository.git
-Setup branches and remotes in conf.py:
-
-GITHUB\_DEPLOY\_BRANCH is the branch where Nikola-generated HTML files will be deployed. It should be gh-pages for project pages and master for user pages (user.github.io).
-GITHUB\_SOURCE\_BRANCH is the branch where your Nikola site source will be deployed. We recommend and default to src.
-GITHUB\_REMOTE\_NAME is the remote to which changes are pushed.
-GITHUB\_COMMIT\_SOURCE controls whether or not the source branch is automatically committed to and pushed.
-We recommend setting it to True, unless you are automating builds with
-Travis CI.
-Create a .gitignore file. We recommend adding at least the following entries:
-
-cache
-.doit.db
-\_\_pycache\_\_
-output
-If you set GITHUB\_COMMIT\_SOURCE to False, you must switch to your source branch and commit to it. Otherwise, this is done for you.
-
-Run nikola
-
-github\_deploy
-
-. This will build the site, commit the output folder to your deploy branch, and push to GitHub. Your website should be up and running within a few minutes.
-
-If you want to use a custom domain, create your CNAME file in files/CNAME on the source branch. Nikola will copy it to the output directory. To add a custom commit message, use the -m option, followed by your message.
-
-git pull origin src --allow-unrelated-histories
+Getting here wasn't smooth, but it works. Now I just need to write things worth reading.

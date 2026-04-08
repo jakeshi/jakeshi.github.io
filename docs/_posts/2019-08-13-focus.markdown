@@ -3,4 +3,9 @@ layout: post
 title: "Focus"
 date: 2019-08-13
 ---
-There are too many distractions. So it is very important to focus.
+
+There are too many distractions. Social media, news cycles, Slack notifications, the endless scroll of content that feels productive but isn't.
+
+I keep coming back to the same realization: the hard part of any project isn't the work itself — it's protecting the time and attention to do the work. Every ambitious thing I've started and abandoned didn't fail because the idea was bad. It failed because I let a thousand small things eat the hours I needed to make progress.
+
+So I'm writing this as a reminder to myself: focus. Pick the thing that matters most right now, and give it uninterrupted time. Say no to everything else until it's done. It sounds simple because it is. The hard part is actually doing it.

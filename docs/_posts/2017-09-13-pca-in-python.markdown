@@ -1,27 +1,28 @@
 ---
 layout: post
-title: "PCA in Python"
+title: "Lump Sum vs. Dollar Cost Averaging: An Apple Stock Analysis"
 date: 2017-09-13
 ---
-## Use Apple's stock as an example to create some graphs and analysis
 
-Reference:
-<http://tetration.xyz/lumpsum_vs_dca/>
+I've been curious about a classic investing question: is it better to invest a lump sum all at once, or spread it out over time (dollar cost averaging)? Instead of reading more opinions about it, I decided to just look at the data using Python.
+
+I'm using Apple (AAPL) stock as the example — pulling historical prices from Yahoo Finance and simulating both strategies with a $10,000 investment.
+
+## Pulling the data
 
 ```python
 import pandas as pd
 import pandas_datareader.data as web
 import datetime
-pd.set_option('display.width', 200) # Displaying more columns in one row
 
-# Data date range, Google provides up to 4000 entries in one call
 start = datetime.datetime(2017, 9, 1)
 end = datetime.datetime(2018, 2, 3)
 
 spy = web.DataReader("AAPL", "yahoo", start, end)
-
-print(spy.head()) # See first few rows
+print(spy.head())
 ```
+
+## Plotting the stock price
 
 ```python
 %matplotlib inline
@@ -32,15 +33,18 @@ style.use('fivethirtyeight')
 
 spy['Adj Close'].plot(figsize=(20,10))
 ax = plt.subplot()
-ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x))) # Y axis dollarsymbols
+ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x)))
 plt.title('AAPL Historical Price on Close')
-plt.xlabel('')
-plt.ylabel('Stock Price ($)');
+plt.ylabel('Stock Price ($)')
 ```
 
+## Lump sum simulation
+
+If you invested $10,000 on any given date, what would it be worth at the end of the period?
+
 ```python
-value_price = spy['Adj Close'][-1] # The final value of our stock
-initial_investment = 10000 # Our initial investment of $10k
+value_price = spy['Adj Close'][-1]
+initial_investment = 10000
 
 num_stocks_bought = initial_investment / spy['Adj Close']
 lumpsum = num_stocks_bought * value_price
@@ -48,45 +52,30 @@ lumpsum.name = 'Lump Sum'
 
 lumpsum.plot(figsize=(20,10))
 ax = plt.subplot()
-ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x))) # Y axis dollarsymbols
-plt.title('Lump sum - Value today of $10,000 invested on date')
-plt.xlabel('')
-plt.ylabel('Investment Value ($)');
+ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x)))
+plt.title('Lump Sum - Value of $10,000 invested on date')
+plt.ylabel('Investment Value ($)')
 ```
+
+## Dollar cost averaging simulation
+
+Instead of investing all at once, spread the $10,000 over 12 weekly purchases:
 
 ```python
 def doDCA(investment, start_date):
-    # Get 12 investment dates in 7 day increments starting from start date
-    investment_dates_all = pd.date_range(start_date,periods=12,freq='7D')
-    # Remove those dates beyond our known data range
+    investment_dates_all = pd.date_range(start_date, periods=12, freq='7D')
     investment_dates = investment_dates_all[investment_dates_all < spy.index[-1]]
-
-    # Get closest business dates with available data
     closest_investment_dates = spy.index.searchsorted(investment_dates)
-
-    # How much to invest on each date
-    portion = investment/12.0 # (Python 3.0 does implicit double conversion, Python 2.7 does not)
-
-    # Get the total of all stocks purchased for each of those dates (on the Close)
+    portion = investment / 12.0
     stocks_invested = sum(portion / spy['Adj Close'][closest_investment_dates])
-
-    # Add uninvested amount back
     uninvested_dollars = portion * sum(investment_dates_all >= spy.index[-1])
-
-    # value of stocks today
-    total_value = value_price*stocks_invested + uninvested_dollars
+    total_value = value_price * stocks_invested + uninvested_dollars
     return total_value
 
-# Generate DCA series for every possible date
-dca = pd.Series(spy.index.map(lambda x: doDCA(initial_investment, x)), index=spy.index, name='Dollar Cost Averaging (DCA)')
+dca = pd.Series(spy.index.map(lambda x: doDCA(initial_investment, x)),
+                index=spy.index, name='Dollar Cost Averaging')
 ```
 
-```python
-dca.plot(figsize=(20,10))
-ax = plt.subplot()
-ax.yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '${:,.0f}'.format(x))) # Y axis dollarsymbols
-plt.title('Dollar Cost Averaging - Value today of $10,000 invested on date')
-plt.xlabel('')
-plt.ylabel('Investment Value ($)');
+The results are interesting. For a stock that's generally trending up like Apple, lump sum tends to win — you benefit from being in the market sooner. DCA smooths out the risk but leaves some upside on the table.
 
-```
+This is a small sample and a single stock, so I wouldn't draw sweeping conclusions. But it's a fun exercise, and writing the DCA simulation from scratch taught me more than reading any article about it.
