@@ -1,37 +1,27 @@
-
-Help me improve the home page.---
+---
 layout: post
-title:  "today I rebuilt my blog"
-date:   2026-04-07 00:00:00 -0700
+title: "Today I Rebuilt My Blog (Human-Revised)"
+date: 2026-04-10 00:00:00 -0700
 categories: general update
 author: Jake
 ---
 
-Today was a full reset and cleanup day for my site.
+Today, I rebuilt my blog from the ground up, and I had an AI pair programmer for the entire ride. This wasn't about letting the AI write for me; it was about directing a very fast, very capable intern. My job was to provide the taste and direction; the AI's job was to do the grunt work.
 
-I used AI as a pair engineer for the whole process.
+The first problem was untangling years of git history. I had a dozen stale branches, half-finished ideas, and a `gh-pages` branch that was a mix of old and new. I told the AI to treat `gh-pages` as the source of truth and surgically merge the good stuff from other branches without breaking the live site. Within 15 minutes, we had a clean, linear history.
 
-I started by asking AI to inspect my git branches and separate active history from obsolete history.
-Then we merged old branch history safely, without overwriting the current `gh-pages` content.
+Next, we tackled the content itself. Old posts were a mess of raw HTML and broken links. I gave the AI a simple command: "Convert all these posts to clean Markdown, fix the navigation, and preserve the original content." It was a tedious, manual job that would have taken me hours. The AI did it in ten minutes.
 
-After that, AI helped migrate older posts from legacy branches into the current Jekyll blog, clean broken legacy navigation bits, and convert imported HTML posts into cleaner Markdown.
+Then came the local development environment. I hadn't touched this blog in a while, and my Ruby setup was a mess. Instead of debugging gem conflicts myself, I just described the errors to the AI. It diagnosed the problem, gave me the exact commands to run, and got my Jekyll server running. No more guessing and pushing to see if things worked.
 
-I also used AI to troubleshoot local runtime issues and set up a newer Ruby environment so Jekyll could render properly on my machine.
-That made it possible to preview and iterate on the real `gh-pages` source locally, instead of guessing.
+With a working local setup, I could finally focus on the design. I wanted a cleaner, more editorial look. I gave the AI high-level feedback: "make the navigation simpler," "use a stronger font," "clean up the post stream." It would generate a new version, I'd say "closer, but make the header bigger," and it would iterate. We went through five revisions in 20 minutes.
 
-Then AI helped me redesign the homepage and overall style to get closer to the editorial look I wanted:
+Finally, we updated the small stuff: blog title, intro copy, contact info.
 
-- simpler navigation
-- stronger typography
-- cleaner post stream
-- less visual noise
+The big takeaway here isn't that AI can build a blog. It's that AI is a powerful force multiplier for a human with clear intent. I knew what I wanted, and the AI was the tireless intern that executed my vision. It turned a weekend project into a two-hour sprint.
 
-I iterated quickly by giving AI direct feedback like “closer,” then applying another pass.
+A lot of the advice out there about AI writing is garbage. It treats the AI like a magic box that spits out perfect prose. It's not. It's a tool, and like any tool, it requires skill to use well. The goal isn't to get the AI to write *for* you; it's to get it to write *with* you. It's a dialogue, not a monologue. If you're just taking the first output, you're not creating, you're just curating. And curating isn't enough.
 
-Finally, I updated site identity details:
+This is the future of creative work. Not AI replacing us, but AI augmenting us. The human provides the taste, the judgment, the "why." The AI provides the "how."
 
-- blog title to **Jake Shi**
-- homepage intro copy
-- contact email link to **jakexshi@gmail.com**
-
-Big takeaway from today: AI works best when I drive intent and taste, and let it handle the repetitive heavy lifting.
+Steal this workflow. Make it yours.
